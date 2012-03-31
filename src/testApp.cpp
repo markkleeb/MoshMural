@@ -46,20 +46,7 @@ void testApp::setup(){
 	framenum=0;
 	doCapture=false;
     
-   
-    
-	
-    for(int i = 0; i< 1000; i++){
-        f.addBoid();
-    }
-    
-//		Boid b;
-//		boids.push_back( b );
-	
-       
-    
- 
-        
+
     
     
 
@@ -68,6 +55,8 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
     
+    
+ 
     ofBackground(0, 0, 0);
     
     kinect.update();
@@ -111,8 +100,21 @@ void testApp::update(){
 		// also, find holes is set to true so we will get interior contours as well....
 		contourFinder.findContours(grayImage, 100, (kinect.width*kinect.height)/2, 20, false);
         
+        
+        
 	}
 
+    
+    for(int i=0; i< contourFinder.blobs.size(); i++){
+    
+        while(f.boids.size() < 100){
+    
+        f.addBoid(contourFinder.blobs[i].centroid);
+        }
+            
+    }
+    
+    
     
     }
 
@@ -127,7 +129,13 @@ void testApp::draw(){
     
 	kinectImage(); 
     
-    f.draw(contourFinder);
+    for(int i = 0; i < contourFinder.blobs.size(); i ++){
+        
+        f.draw(contourFinder);
+        
+    }
+    
+    
     
        
     

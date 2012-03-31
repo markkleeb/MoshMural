@@ -10,10 +10,10 @@
 #include "Boid.h"
 
 
-Boid::Boid() {
+Boid::Boid(ofPoint centroid) {
 
-    loc.x = ofRandom(0, 1400);//750;
-	loc.y = ofRandom(0, 800);//690;   
+    loc.x = centroid.x;
+	loc.y = centroid.y;   
     
 	acc = 0;
 	

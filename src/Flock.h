@@ -19,7 +19,7 @@ public:
 	Flock();
 	void update(ofxCvContourFinder& _cv);
 	void draw(ofxCvContourFinder& _cv);
-	void addBoid();
+	void addBoid(ofPoint centroid);
 	
      
     

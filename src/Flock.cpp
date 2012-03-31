@@ -12,6 +12,8 @@
 
 Flock::Flock() {
     
+    
+    
 }
 
 void Flock::update(ofxCvContourFinder& _cv) {
@@ -23,7 +25,9 @@ void Flock::update(ofxCvContourFinder& _cv) {
 }
 
 void Flock::draw(ofxCvContourFinder& _cv) {
-	for(int i=0; i<boids.size(); i++) {
+	
+    
+    for(int i=0; i<boids.size(); i++) {
 		boids[i]->draw();
         
         if(boids[i]->debug){
@@ -55,6 +59,6 @@ void Flock::draw(ofxCvContourFinder& _cv) {
     
 }
 
-void Flock::addBoid() {
-	boids.push_back( new Boid() );
+void Flock::addBoid(ofPoint centroid) {
+	boids.push_back( new Boid(centroid) );
 }

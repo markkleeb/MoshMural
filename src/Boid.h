@@ -27,7 +27,7 @@ class Boid {
     bool avoidObject;
     
 public:
-	Boid();
+	Boid(ofPoint centroid);
 	
 	void update(vector<Boid*> boids);
 	void draw();
