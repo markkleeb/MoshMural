@@ -30,7 +30,7 @@ public:
 	Boid(ofPoint centroid);
 	
 	void update(vector<Boid*> boids);
-	void draw();
+	void draw(ofColor color);
     void seek(ofPoint target);
     void arrive(ofPoint target);
     void flock(vector<Boid*> boids);

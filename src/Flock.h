@@ -23,6 +23,8 @@ public:
 	
      
     
+    ofColor color;
+    
 	vector<Boid*> boids;
 };
 

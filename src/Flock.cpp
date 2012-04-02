@@ -12,6 +12,7 @@
 
 Flock::Flock() {
     
+    color = ofColor(ofRandom(150, 255), ofRandom(150,255), ofRandom(150, 255));
   
     
     
@@ -35,7 +36,7 @@ void Flock::draw(ofxCvBlob& _cv) {
 	
     
     for(int i=0; i<boids.size(); i++) {
-		boids[i]->draw();
+		boids[i]->draw(color);
         
         if(boids[i]->debug){
            

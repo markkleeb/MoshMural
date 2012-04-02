@@ -17,8 +17,8 @@ Boid::Boid(ofPoint centroid) {
     
 	acc = 0;
 	
-    r = 3.0;
-    maxspeed = 5;
+    r = 2.0;
+    maxspeed = 2;
     maxforce = 0.1;
     vel = 0;//ofPoint(-maxspeed, 0);
     wandertheta = 0.0;
@@ -61,13 +61,13 @@ void Boid::flock(vector<Boid*> boids){
 	
 	// Arbitrarily weight these forces
 	sep *= 5.0;
-	ali *= 0.1;
-	coh *= 0.1;
+	ali *= 1.0;
+	coh *= 1.0;
 	
 	acc += sep + ali + coh;
 }
 
-void Boid::draw() {
+void Boid::draw(ofColor color) {
     
     // Draw a triangle rotated in the direction of velocity
         
@@ -81,7 +81,7 @@ void Boid::draw() {
 	float heading2D = ofRadToDeg(theta)+90;
 	
 	ofEnableAlphaBlending();
-    ofSetColor(255, 255, 255);
+    ofSetColor(color);
     ofFill();
     ofPushMatrix();
     ofTranslate(loc.x, loc.y);
@@ -93,8 +93,8 @@ void Boid::draw() {
 //    ofEndShape(true);
 //    i.setAnchorPoint(10, 12);
 //    i.draw(0,0);
-    ofSetColor(255, 20, 147);
-    ofCircle(0, 0, r);
+    ofSetColor(color);
+    ofRect(0, 0, r, r);
     ofPopMatrix();
 	ofDisableAlphaBlending();
     
@@ -131,11 +131,7 @@ void Boid::draw() {
 
 void Boid::intersects(ofxCvBlob& _cv, vector<Boid*> boids){
     
-  //  wander();
-    
-    
-     //flock(boids); 
-
+  
     predictLoc = loc + vel*10;  // A vector pointing from the location to where the boid is heading
     
     
@@ -146,15 +142,15 @@ void Boid::intersects(ofxCvBlob& _cv, vector<Boid*> boids){
         if(l.inside(predictLoc))
         {   
            
-            //wander();
-            /*
-            force = predictLoc- _cv.blobs[i].centroid;
-            acc += force.normalize()* 0.01;
-          */  
+            
+            r = 2;
+            maxspeed = 3;
             flock(boids);
                        
         } else {
             
+            r = 10;
+            maxspeed = 10;
          
             force =  _cv.centroid - predictLoc;
             acc += force.normalize()* 0.5;
