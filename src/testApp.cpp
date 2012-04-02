@@ -61,7 +61,6 @@ void testApp::update(){
     
     kinect.update();
     
-    f.update(contourFinder);
     
     
     // there is a new frame and we are connected
@@ -106,11 +105,13 @@ void testApp::update(){
 
     
     for(int i=0; i< contourFinder.blobs.size(); i++){
+        
+        Flock f;
+        flocks.push_back(f);
+        
+        flocks[i].update(contourFinder.blobs[i]);
     
-        while(f.boids.size() < 100){
-    
-        f.addBoid(contourFinder.blobs[i].centroid);
-        }
+        
             
     }
     
@@ -131,7 +132,7 @@ void testApp::draw(){
     
     for(int i = 0; i < contourFinder.blobs.size(); i ++){
         
-        f.draw(contourFinder);
+        flocks[i].draw(contourFinder.blobs[i]);
         
     }
     
@@ -160,16 +161,21 @@ void testApp::keyPressed(int key){
 		case'p':
             if (kinectOn) {
                 kinectOn = false;
-                for(int i = 0; i < f.boids.size(); i++)
+                for(int j=0; j < flocks.size(); j++){
+                for(int i = 0; i < flocks[j].boids.size(); i++)
                 {
-                    f.boids[i]->debug = false;
+                    flocks[j].boids[i]->debug = false;
+                }
                 }
             } else {
                 kinectOn = true;
-                for(int i = 0; i < f.boids.size(); i++)
+                for(int j = 0; j < flocks.size(); j++){
+                
+                for(int i = 0; i < flocks[j].boids.size(); i++)
                 {
-                    f.boids[i]->debug = true;
+                    flocks[j].boids[i]->debug = true;
                 }
+            }
             }
 			break;
 			
@@ -230,10 +236,12 @@ void testApp::keyPressed(int key){
 			break;
             
         case 'd':
-            for(int i = 0; i < f.boids.size(); i++)
+                for(int j = 0; j < flocks.size(); j++){
+                    for(int i = 0; i < flocks[j].boids.size(); i++)
             {
-                f.boids[i]->debug = false;
+                flocks[j].boids[i]->debug = false;
             }
+                }
 			break;
             
 	}

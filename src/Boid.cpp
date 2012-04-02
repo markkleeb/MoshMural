@@ -17,7 +17,7 @@ Boid::Boid(ofPoint centroid) {
     
 	acc = 0;
 	
-    r = 5.0;
+    r = 3.0;
     maxspeed = 5;
     maxforce = 0.1;
     vel = 0;//ofPoint(-maxspeed, 0);
@@ -60,9 +60,9 @@ void Boid::flock(vector<Boid*> boids){
 	ofPoint coh = cohesion(boids);
 	
 	// Arbitrarily weight these forces
-	sep *= 10.0;
-	ali *= 0.01;
-	coh *= 0.01;
+	sep *= 5.0;
+	ali *= 0.1;
+	coh *= 0.1;
 	
 	acc += sep + ali + coh;
 }
@@ -129,7 +129,7 @@ void Boid::draw() {
     
 }
 
-void Boid::intersects(ofxCvContourFinder& _cv, vector<Boid*> boids){
+void Boid::intersects(ofxCvBlob& _cv, vector<Boid*> boids){
     
   //  wander();
     
@@ -138,8 +138,8 @@ void Boid::intersects(ofxCvContourFinder& _cv, vector<Boid*> boids){
 
     predictLoc = loc + vel*10;  // A vector pointing from the location to where the boid is heading
     
-    for ( int i = 0; i < _cv.blobs.size(); i++ ) {
-        ofxCvBlob temp = _cv.blobs[i];
+    
+        ofxCvBlob temp = _cv;
         ofPolyline l;
         l.addVertexes(temp.pts);
         
@@ -156,15 +156,15 @@ void Boid::intersects(ofxCvContourFinder& _cv, vector<Boid*> boids){
         } else {
             
          
-            force =  _cv.blobs[i].centroid - predictLoc;
-            acc += force.normalize()* 1.5;
+            force =  _cv.centroid - predictLoc;
+            acc += force.normalize()* 0.5;
             //cout << "bounce!\n";
 
             
         }
         
         
-    }    
+        
     
   
 

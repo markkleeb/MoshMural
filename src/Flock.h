@@ -17,8 +17,8 @@
 class Flock {
 public:
 	Flock();
-	void update(ofxCvContourFinder& _cv);
-	void draw(ofxCvContourFinder& _cv);
+	void update(ofxCvBlob& _cv);
+	void draw(ofxCvBlob& _cv);
 	void addBoid(ofPoint centroid);
 	
      

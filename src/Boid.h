@@ -71,7 +71,7 @@ public:
     ofPoint steer(ofPoint target, bool slowdown);
     
     
-    void intersects(ofxCvContourFinder& _cf, vector<Boid*> boids);
+    void intersects(ofxCvBlob& _cf, vector<Boid*> boids);
 };
 
 #endif

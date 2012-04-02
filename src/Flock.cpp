@@ -12,11 +12,18 @@
 
 Flock::Flock() {
     
+  
     
     
 }
 
-void Flock::update(ofxCvContourFinder& _cv) {
+void Flock::update(ofxCvBlob& _cv) {
+    
+    while(boids.size() < 500){
+        
+        addBoid(_cv.centroid);
+    }
+    
 	for(int i=0; i<boids.size(); i++) {
 		boids[i]->update(boids);
         boids[i]->intersects(_cv, boids);
@@ -24,23 +31,23 @@ void Flock::update(ofxCvContourFinder& _cv) {
 	}
 }
 
-void Flock::draw(ofxCvContourFinder& _cv) {
+void Flock::draw(ofxCvBlob& _cv) {
 	
     
     for(int i=0; i<boids.size(); i++) {
 		boids[i]->draw();
         
         if(boids[i]->debug){
-            for(int i=0; i<_cv.blobs.size(); i++){
+           
                 
                 ofPushMatrix();
-                ofTranslate(_cv.blobs[i].centroid.x, _cv.blobs[i].centroid.y);
+                ofTranslate(_cv.centroid.x, _cv.centroid.y);
                 ofSetColor(0, 255, 0);
                 ofEllipse(0, 0, 10, 10);
                 ofPopMatrix();
                 
                 
-            }
+            
             
         }
         

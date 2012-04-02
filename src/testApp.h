@@ -35,7 +35,7 @@ class testApp : public ofBaseApp{
 		
         ofxKinect kinect;
     
-        Flock f;
+        vector<Flock> flocks;
     
         vector<ofxCvBlob> cvBlobs;
        
