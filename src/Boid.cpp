@@ -12,8 +12,8 @@
 
 Boid::Boid(ofPoint centroid) {
 
-    loc.x = centroid.x;
-	loc.y = centroid.y;   
+    loc.x = ofRandom(centroid.x-10, centroid.x+10);
+	loc.y = ofRandom(centroid.y-10, centroid.y+10);   
     
 	acc = 0;
 	
@@ -60,7 +60,7 @@ void Boid::flock(vector<Boid*> boids){
 	ofPoint coh = cohesion(boids);
 	
 	// Arbitrarily weight these forces
-	sep *= 5.0;
+	sep *= 10.0;
 	ali *= 1.0;
 	coh *= 1.0;
 	
@@ -94,7 +94,7 @@ void Boid::draw(ofColor color) {
 //    i.setAnchorPoint(10, 12);
 //    i.draw(0,0);
     ofSetColor(color);
-    ofRect(0, 0, r, r);
+    ofEllipse(0, 0, r, r);
     ofPopMatrix();
 	ofDisableAlphaBlending();
     
@@ -129,31 +129,31 @@ void Boid::draw(ofColor color) {
     
 }
 
-void Boid::intersects(ofxCvBlob& _cv, vector<Boid*> boids){
+void Boid::intersects(myBlob& blob, vector<Boid*> boids){
     
   
     predictLoc = loc + vel*10;  // A vector pointing from the location to where the boid is heading
     
     
-        ofxCvBlob temp = _cv;
+        //myBlob temp = blob;
         ofPolyline l;
-        l.addVertexes(temp.pts);
+        l.addVertexes(blob.points);
         
         if(l.inside(predictLoc))
         {   
            
             
-            r = 2;
-            maxspeed = 3;
+            r = 2.5;
+            maxspeed = 5;
             flock(boids);
                        
         } else {
             
-            r = 10;
+            r = 8;
             maxspeed = 10;
          
-            force =  _cv.centroid - predictLoc;
-            acc += force.normalize()* 0.5;
+            force =  blob.cen - predictLoc;
+            acc += force.normalize()* 2.5;
             //cout << "bounce!\n";
 
             

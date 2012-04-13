@@ -5,6 +5,7 @@
 #include "ofxOpenCv.h"
 #include "ofxKinect.h"
 #include "Flock.h"
+#include "myBlob.h"
 
 
 
@@ -35,9 +36,12 @@ class testApp : public ofBaseApp{
 		
         ofxKinect kinect;
     
-        vector<Flock> flocks;
+        
     
         vector<ofxCvBlob> cvBlobs;
+    
+     vector<Flock> flocks;
+    vector<myBlob> myBlobs;
        
     
         ofxCvColorImage colorImg;
@@ -60,6 +64,8 @@ class testApp : public ofBaseApp{
         int nearThreshold;
         int farThreshold;
         
+        int blobCount;
+    
         int angle;
         
         // used for viewing the point cloud

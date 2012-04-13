@@ -12,27 +12,27 @@
 
 Flock::Flock() {
     
-    color = ofColor(ofRandom(150, 255), ofRandom(150,255), ofRandom(150, 255));
+    color = ofColor(ofRandom(20, 255), ofRandom(20,255), ofRandom(20, 255));
   
     
     
 }
 
-void Flock::update(ofxCvBlob& _cv) {
+void Flock::update(myBlob& blob) {
     
-    while(boids.size() < 500){
+    while(boids.size() < 100){
         
-        addBoid(_cv.centroid);
+        addBoid(blob.cen);
     }
     
 	for(int i=0; i<boids.size(); i++) {
 		boids[i]->update(boids);
-        boids[i]->intersects(_cv, boids);
+        boids[i]->intersects(blob, boids);
         
 	}
 }
 
-void Flock::draw(ofxCvBlob& _cv) {
+void Flock::draw(myBlob& blob) {
 	
     
     for(int i=0; i<boids.size(); i++) {
@@ -42,7 +42,7 @@ void Flock::draw(ofxCvBlob& _cv) {
            
                 
                 ofPushMatrix();
-                ofTranslate(_cv.centroid.x, _cv.centroid.y);
+                ofTranslate(blob.cen.x, blob.cen.y);
                 ofSetColor(0, 255, 0);
                 ofEllipse(0, 0, 10, 10);
                 ofPopMatrix();

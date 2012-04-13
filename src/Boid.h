@@ -16,6 +16,7 @@
 #include "ofxCvContourFinder.h"
 #include "ofxOpenCv.h"
 #include "ofxKinect.h"
+#include "myBlob.h"
 
 
 
@@ -71,7 +72,7 @@ public:
     ofPoint steer(ofPoint target, bool slowdown);
     
     
-    void intersects(ofxCvBlob& _cf, vector<Boid*> boids);
+    void intersects(myBlob& blob, vector<Boid*> boids);
 };
 
 #endif

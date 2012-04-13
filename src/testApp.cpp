@@ -103,16 +103,121 @@ void testApp::update(){
         
 	}
 
+    //scenario 1 - no blobs: make a blob for each CV blob
     
-    for(int i=0; i< contourFinder.blobs.size(); i++){
+    if(myBlobs.size() ==0){
+    
+    for(int i=0; i< contourFinder.blobs.size(); i++){        
+       
+        myBlob b(contourFinder.blobs[i].centroid, contourFinder.blobs[i].pts);
+        myBlobs.push_back(b);
+        
+    }
+    }
+    
+    //scenario 2 - we have less blobs than CV blobs
+    
+    else if(myBlobs.size() < contourFinder.blobs.size())
+    {
+        vector<bool> used;
+        
+        for(int i = 0; i<myBlobs.size(); i++)
+        {
+            float record = 5000;
+            int index = -1;
+            for(int j = 0; j < contourFinder.blobs.size(); j++)
+            {
+                float d = ofDist(contourFinder.blobs[j].centroid.x, contourFinder.blobs[j].centroid.y, myBlobs[i].cen.x, myBlobs[i].cen.y);
+                if(d > record && !used[j])
+                {
+                    record = d;
+                    index = j;
+                    
+                }
+                
+            }
+            
+            used[index] = true;
+            myBlobs[i].update(contourFinder.blobs[index]);
+            
+        }
+        
+        for(int i=0; i < contourFinder.blobs.size(); i++)
+        {
+            if(!used[i])
+            {
+                myBlob b(contourFinder.blobs[i].centroid, contourFinder.blobs[i].pts);
+                myBlobs.push_back(b);
+                
+            }
+            
+        }
+        
+    }
+        
+        //Scenario 3: more myBlobs than cv blobs
+    else{
+        
+        
+        for(int i=0; i< myBlobs.size(); i++)
+        {
+            myBlobs[i].available = true;
+        }
+        
+        for(int i=0; i<contourFinder.blobs.size(); i++)
+        {
+            float record = 50000;
+            int index = -1;
+            for(int j = 0; j < myBlobs.size(); j++)
+            {
+                float d = ofDist(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, myBlobs[j].cen.x, myBlobs[j].cen.y);
+                if(d < record && myBlobs[j].available)
+                {
+                    record = d;
+                    index = j;
+                }
+            }
+            
+            myBlob b = myBlobs[index];
+            b.available = false;
+            b.update(contourFinder.blobs[i]);
+            
+        }
+        
+        for(int i = 0; i < myBlobs.size(); i++)
+        {
+            if(myBlobs[i].available)
+            {
+                myBlobs[i].countDown();
+                if(myBlobs[i].dead()){
+                    myBlobs[i].blobDelete = true;
+                }
+            }
+        }
+    }
+    
+    //Delete any that should be deleted
+    for(int i = myBlobs.size()-1; i >=0; i--)
+    {
+        if(myBlobs[i].blobDelete)
+        {
+            myBlobs.erase(myBlobs.begin() +i);
+        }
+        
+        
+    }
+        
+        
+        
+        
+    
+
+    for(int i=0; i < myBlobs.size(); i++){
         
         Flock f;
         flocks.push_back(f);
         
-        flocks[i].update(contourFinder.blobs[i]);
-    
-        
-            
+        flocks[i].update(myBlobs[i]);
     }
     
     
@@ -130,11 +235,16 @@ void testApp::draw(){
     
 	kinectImage(); 
     
-    for(int i = 0; i < contourFinder.blobs.size(); i ++){
+   
+    
+    
+    for(int i = 0; i < myBlobs.size(); i ++){
         
-        flocks[i].draw(contourFinder.blobs[i]);
+        flocks[i].draw(myBlobs[i]);
         
     }
+    
+    
     
     
     
@@ -173,7 +283,7 @@ void testApp::keyPressed(int key){
                 
                 for(int i = 0; i < flocks[j].boids.size(); i++)
                 {
-                    flocks[j].boids[i]->debug = true;
+                  //  flocks[j].boids[i]->debug = true;
                 }
             }
             }
@@ -338,7 +448,7 @@ void testApp::kinectImage(){
       //grayImage.draw(0, 0, 1280, 768);
         //contourFinder.draw(-700, 0, 2400, 1180);
         contourFinder.draw(0,0);    
-        
+       /* 
         // draw instructions
         ofSetColor(255, 255, 255);
         stringstream reportStream;
@@ -353,8 +463,8 @@ void testApp::kinectImage(){
         << "press c to close the connection and o to open it again, connection is: " << kinect.isConnected() << endl
         << "press UP and DOWN to change the tilt angle: " << angle << " degrees" << endl;
         
-        ofDrawBitmapString(reportStream.str(),20,790);
-
+        ofDrawBitmapString(reportStream.str(),20,750);
+*/
         
     }
     
