@@ -4,6 +4,7 @@
 //--------------------------------------------------------------
 void testApp::setup(){
     
+    blobCount = 0;
     startX = 1100;
     startY = 650;
     ofSetFrameRate(60);
@@ -105,40 +106,43 @@ void testApp::update(){
 
     //scenario 1 - no blobs: make a blob for each CV blob
     
-    if(myBlobs.size() ==0){
+    if(myBlobs.size() == 0){
     
     for(int i=0; i< contourFinder.blobs.size(); i++){        
        
-        myBlob b(contourFinder.blobs[i].centroid, contourFinder.blobs[i].pts);
-        myBlobs.push_back(b);
+        myBlobs.push_back(new myBlob(contourFinder.blobs[i].centroid, contourFinder.blobs[i].pts, blobCount));
+        blobCount++;
         
     }
     }
     
     //scenario 2 - we have less blobs than CV blobs
     
-    else if(myBlobs.size() < contourFinder.blobs.size())
+    else if(myBlobs.size() <= contourFinder.blobs.size())
     {
         vector<bool> used;
-        
+       for(int i = 0; i < contourFinder.blobs.size(); i++)
+        {
+            bool n;
+            used.push_back(n);
+        }
+    
         for(int i = 0; i<myBlobs.size(); i++)
         {
-            float record = 5000;
+            float record = 50000;
             int index = -1;
             for(int j = 0; j < contourFinder.blobs.size(); j++)
             {
-                float d = ofDist(contourFinder.blobs[j].centroid.x, contourFinder.blobs[j].centroid.y, myBlobs[i].cen.x, myBlobs[i].cen.y);
-                if(d > record && !used[j])
+                float d = ofDist(contourFinder.blobs[j].centroid.x, contourFinder.blobs[j].centroid.y, myBlobs[i]->cen.x, myBlobs[i]->cen.y);
+                if(d < record && !used[j])
                 {
                     record = d;
                     index = j;
-                    
                 }
-                
             }
             
             used[index] = true;
-            myBlobs[i].update(contourFinder.blobs[index]);
+            myBlobs[i]->update(contourFinder.blobs[index]);
             
         }
         
@@ -146,8 +150,9 @@ void testApp::update(){
         {
             if(!used[i])
             {
-                myBlob b(contourFinder.blobs[i].centroid, contourFinder.blobs[i].pts);
-                myBlobs.push_back(b);
+                myBlobs.push_back(new myBlob(contourFinder.blobs[i].centroid, contourFinder.blobs[i].pts, blobCount));
+
+                blobCount++;
                 
             }
             
@@ -161,36 +166,36 @@ void testApp::update(){
         
         for(int i=0; i< myBlobs.size(); i++)
         {
-            myBlobs[i].available = true;
+            myBlobs[i]->available = true;
         }
         
         for(int i=0; i<contourFinder.blobs.size(); i++)
         {
-            float record = 50000;
+            float record = 500000;
             int index = -1;
             for(int j = 0; j < myBlobs.size(); j++)
             {
-                float d = ofDist(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, myBlobs[j].cen.x, myBlobs[j].cen.y);
-                if(d < record && myBlobs[j].available)
+                float d = ofDist(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, myBlobs[j]->cen.x, myBlobs[j]->cen.y);
+                if(d < record && myBlobs[j]->available)
                 {
                     record = d;
                     index = j;
                 }
             }
             
-            myBlob b = myBlobs[index];
-            b.available = false;
-            b.update(contourFinder.blobs[i]);
+            
+            myBlobs[index]->available = false;
+            myBlobs[index]->update(contourFinder.blobs[i]);
             
         }
         
         for(int i = 0; i < myBlobs.size(); i++)
         {
-            if(myBlobs[i].available)
+            if(myBlobs[i]->available)
             {
-                myBlobs[i].countDown();
-                if(myBlobs[i].dead()){
-                    myBlobs[i].blobDelete = true;
+                myBlobs[i]->countDown();
+                if(myBlobs[i]->dead()){
+                    myBlobs[i]->blobDelete = true;
                 }
             }
         }
@@ -199,9 +204,10 @@ void testApp::update(){
     //Delete any that should be deleted
     for(int i = myBlobs.size()-1; i >=0; i--)
     {
-        if(myBlobs[i].blobDelete)
+        if(myBlobs[i]->blobDelete)
         {
             myBlobs.erase(myBlobs.begin() +i);
+            flocks.erase(flocks.begin() +i);
         }
         
         
@@ -214,10 +220,9 @@ void testApp::update(){
 
     for(int i=0; i < myBlobs.size(); i++){
         
-        Flock f;
-        flocks.push_back(f);
+        flocks.push_back(new Flock(myBlobs[i]->flockcolor));
         
-        flocks[i].update(myBlobs[i]);
+        flocks[i]->update(myBlobs[i]);
     }
     
     
@@ -240,15 +245,13 @@ void testApp::draw(){
     
     for(int i = 0; i < myBlobs.size(); i ++){
         
-        flocks[i].draw(myBlobs[i]);
+        myBlobs[i]->draw();
+        
+        flocks[i]->draw(myBlobs[i]);
         
     }
     
     
-    
-    
-    
-       
     
 //    cout << " " << ofGetFrameNum();
     
@@ -272,16 +275,16 @@ void testApp::keyPressed(int key){
             if (kinectOn) {
                 kinectOn = false;
                 for(int j=0; j < flocks.size(); j++){
-                for(int i = 0; i < flocks[j].boids.size(); i++)
+                for(int i = 0; i < flocks[j]->boids.size(); i++)
                 {
-                    flocks[j].boids[i]->debug = false;
+                    flocks[j]->boids[i]->debug = false;
                 }
                 }
             } else {
                 kinectOn = true;
                 for(int j = 0; j < flocks.size(); j++){
                 
-                for(int i = 0; i < flocks[j].boids.size(); i++)
+                for(int i = 0; i < flocks[j]->boids.size(); i++)
                 {
                   //  flocks[j].boids[i]->debug = true;
                 }
@@ -347,9 +350,9 @@ void testApp::keyPressed(int key){
             
         case 'd':
                 for(int j = 0; j < flocks.size(); j++){
-                    for(int i = 0; i < flocks[j].boids.size(); i++)
+                    for(int i = 0; i < flocks[j]->boids.size(); i++)
             {
-                flocks[j].boids[i]->debug = false;
+                flocks[j]->boids[i]->debug = false;
             }
                 }
 			break;

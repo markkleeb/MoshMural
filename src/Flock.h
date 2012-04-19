@@ -17,9 +17,9 @@
 
 class Flock {
 public:
-	Flock();
-	void update(myBlob& blob);
-	void draw(myBlob& blob);
+	Flock(ofColor fcolor);
+	void update(myBlob* blob);
+	void draw(myBlob* blob);
 	void addBoid(ofPoint centroid);
 	
      

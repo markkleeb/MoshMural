@@ -72,7 +72,7 @@ public:
     ofPoint steer(ofPoint target, bool slowdown);
     
     
-    void intersects(myBlob& blob, vector<Boid*> boids);
+    void intersects(myBlob* blob, vector<Boid*> boids);
 };
 
 #endif

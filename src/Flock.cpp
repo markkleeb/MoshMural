@@ -10,19 +10,19 @@
 #include "Flock.h"
 #include <iostream>
 
-Flock::Flock() {
+Flock::Flock(ofColor fcolor) {
     
-    color = ofColor(ofRandom(20, 255), ofRandom(20,255), ofRandom(20, 255));
+    color = fcolor;
   
     
     
 }
 
-void Flock::update(myBlob& blob) {
+void Flock::update(myBlob* blob) {
     
-    while(boids.size() < 100){
+    while(boids.size() < 500){
         
-        addBoid(blob.cen);
+        addBoid(blob->cen);
     }
     
 	for(int i=0; i<boids.size(); i++) {
@@ -32,7 +32,7 @@ void Flock::update(myBlob& blob) {
 	}
 }
 
-void Flock::draw(myBlob& blob) {
+void Flock::draw(myBlob* blob) {
 	
     
     for(int i=0; i<boids.size(); i++) {
@@ -42,7 +42,7 @@ void Flock::draw(myBlob& blob) {
            
                 
                 ofPushMatrix();
-                ofTranslate(blob.cen.x, blob.cen.y);
+                ofTranslate(blob->cen.x, blob->cen.y);
                 ofSetColor(0, 255, 0);
                 ofEllipse(0, 0, 10, 10);
                 ofPopMatrix();
@@ -55,13 +55,7 @@ void Flock::draw(myBlob& blob) {
 
 	}
     
-   /* 
-    if(ofGetFrameNum()%30 == 1){
-        Boid* b;
-		boids.push_back(b);
-        
-    }
-    */
+ 
 
     
     

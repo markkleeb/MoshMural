@@ -10,15 +10,16 @@
 #include "myBlob.h"
 
 
-myBlob::myBlob(ofPoint c, vector<ofPoint> pts)
+myBlob::myBlob(ofPoint c, vector<ofPoint> pts, int blobNo)
 {
     cen = c;
     points = pts;
     
+    flockcolor = ofColor(ofRandom(20, 255), ofRandom(20,255), ofRandom(20, 255));
+    
     available = true;
     blobDelete = false;
-    blobId = blobCount;
-    blobCount++;
+    blobId = blobNo;
     
     timer = 127;
     
@@ -26,14 +27,19 @@ myBlob::myBlob(ofPoint c, vector<ofPoint> pts)
 
 void myBlob::update(ofxCvBlob _cv)
 {
-    points.clear();
-    
+ //   points.clear();
     cen = _cv.centroid;
     points = _cv.pts;    
+    
+ 
+ 
+
 }
 
 void myBlob::draw()
 {
+    ofSetColor(flockcolor);
+    ofNoFill();
     ofBeginShape();
     
     for(int i = 0; i < points.size(); i++)
@@ -44,13 +50,7 @@ void myBlob::draw()
     ofEndShape();
 }
 
-bool myBlob::processPoint(ofPoint centroid)
-{
-    
-    
-    
-    
-}
+
 
 void myBlob::countDown()
 {

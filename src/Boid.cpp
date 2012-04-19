@@ -129,7 +129,7 @@ void Boid::draw(ofColor color) {
     
 }
 
-void Boid::intersects(myBlob& blob, vector<Boid*> boids){
+void Boid::intersects(myBlob* blob, vector<Boid*> boids){
     
   
     predictLoc = loc + vel*10;  // A vector pointing from the location to where the boid is heading
@@ -137,7 +137,7 @@ void Boid::intersects(myBlob& blob, vector<Boid*> boids){
     
         //myBlob temp = blob;
         ofPolyline l;
-        l.addVertexes(blob.points);
+        l.addVertexes(blob->points);
         
         if(l.inside(predictLoc))
         {   
@@ -152,7 +152,7 @@ void Boid::intersects(myBlob& blob, vector<Boid*> boids){
             r = 8;
             maxspeed = 10;
          
-            force =  blob.cen - predictLoc;
+            force =  blob->cen - predictLoc;
             acc += force.normalize()* 2.5;
             //cout << "bounce!\n";
 

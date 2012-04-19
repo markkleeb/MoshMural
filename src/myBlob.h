@@ -14,17 +14,18 @@
 class myBlob
 {
 public:
-    myBlob(ofPoint c, vector<ofPoint> pts);
+    myBlob(ofPoint c, vector<ofPoint> pts, int blobNo);
     
     void update(ofxCvBlob _cv);
     void draw();
     void countDown();
     
-    bool processPoint(ofPoint centroid);
     
     bool available;
     bool blobDelete;
     bool dead();
+    
+    ofColor flockcolor;
     
     ofPoint cen;
     
@@ -32,7 +33,6 @@ public:
    
     
     int timer;
-    int blobCount;
     int blobId;
     
 };

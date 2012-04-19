@@ -40,8 +40,8 @@ class testApp : public ofBaseApp{
     
         vector<ofxCvBlob> cvBlobs;
     
-     vector<Flock> flocks;
-    vector<myBlob> myBlobs;
+     vector<Flock*> flocks;
+    vector<myBlob*> myBlobs;
        
     
         ofxCvColorImage colorImg;
