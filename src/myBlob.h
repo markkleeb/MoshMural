@@ -31,7 +31,7 @@ public:
     
     vector<ofPoint> points;
    
-    
+    int alpha;
     int timer;
     int blobId;
     

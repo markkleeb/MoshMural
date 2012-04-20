@@ -6,11 +6,15 @@
 #include "ofxKinect.h"
 #include "Flock.h"
 #include "myBlob.h"
+#include "fft.h"
+
+#define BUFFER_SIZE 256
+#define NUM_WINDOWS 80
 
 
 
 
-class testApp : public ofBaseApp{
+class testApp : public ofSimpleApp{
 
     int startX, startY;
     
@@ -33,6 +37,7 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
+     void audioReceived 	(float * input, int bufferSize, int nChannels); 
 		
         ofxKinect kinect;
     
@@ -53,8 +58,7 @@ class testApp : public ofBaseApp{
         ofxCvContourFinder contourFinder;
         ofxCvBlob           CvBlob;
     
-
-        
+    
         bool bThreshWithOpenCV;
         bool bDrawPointCloud;
         bool kinectOn;
@@ -75,4 +79,16 @@ private:
     void capture();
     bool doCapture;
     int framenum;
+    
+    float * left;
+    float * right;
+    int 	bufferCounter;
+    fft		myfft;
+    
+    float magnitude[BUFFER_SIZE];
+    float phase[BUFFER_SIZE];
+    float power[BUFFER_SIZE];
+    
+    float freq[NUM_WINDOWS][BUFFER_SIZE/2];
+    float freq_phase[NUM_WINDOWS][BUFFER_SIZE/2];
 };

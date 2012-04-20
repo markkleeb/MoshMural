@@ -33,6 +33,8 @@ void Flock::update(myBlob* blob) {
 }
 
 void Flock::draw(myBlob* blob) {
+    
+    
 	
     
     for(int i=0; i<boids.size(); i++) {

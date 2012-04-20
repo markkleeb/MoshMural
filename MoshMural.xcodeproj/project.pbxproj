@@ -26,6 +26,7 @@
 		5178E53214FC06D200344C90 /* usb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5178E4F914FC06D200344C90 /* usb-1.0.a */; };
 		5193931E15253445003A941B /* Flock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5193931D15253445003A941B /* Flock.cpp */; };
 		51CE71751538BA45000A319C /* myBlob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51CE71741538BA45000A319C /* myBlob.cpp */; };
+		51F1E5B61540D52E00FCFE83 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51F1E5B51540D52E00FCFE83 /* fft.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -220,6 +221,8 @@
 		5193931D15253445003A941B /* Flock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Flock.cpp; sourceTree = "<group>"; };
 		51CE71741538BA45000A319C /* myBlob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myBlob.cpp; sourceTree = "<group>"; };
 		51CE71761538BA51000A319C /* myBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myBlob.h; sourceTree = "<group>"; };
+		51F1E5B41540D51F00FCFE83 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fft.h; path = ../../../../../../Users/Kleeb2/Downloads/audioInputFFTExample/fft.h; sourceTree = "<group>"; };
+		51F1E5B51540D52E00FCFE83 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fft.cpp; path = ../../../../../../Users/Kleeb2/Downloads/audioInputFFTExample/fft.cpp; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -895,6 +898,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				51F1E5B51540D52E00FCFE83 /* fft.cpp */,
+				51F1E5B41540D51F00FCFE83 /* fft.h */,
 				5193931C1525343C003A941B /* Flock.h */,
 				5193931D15253445003A941B /* Flock.cpp */,
 				512B926914F864930061B9BC /* Boid.h */,
@@ -1019,6 +1024,7 @@
 				5178E53114FC06D200344C90 /* usb_libusb10.c in Sources */,
 				5193931E15253445003A941B /* Flock.cpp in Sources */,
 				51CE71751538BA45000A319C /* myBlob.cpp in Sources */,
+				51F1E5B61540D52E00FCFE83 /* fft.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

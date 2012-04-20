@@ -86,15 +86,13 @@ void Boid::draw(ofColor color) {
     ofPushMatrix();
     ofTranslate(loc.x, loc.y);
     ofRotateZ(heading2D);
-//	ofBeginShape();
-//    ofVertex(0, -r*2);
-//    ofVertex(-r, r*2);
-//    ofVertex(r, r*2);
-//    ofEndShape(true);
-//    i.setAnchorPoint(10, 12);
-//    i.draw(0,0);
+	ofBeginShape();
+    ofVertex(0, r);
+    ofVertex(2*r/3, -r*1.5);
+     ofVertex(-2*r/3, -r*1.5);
+    ofEndShape(true);
     ofSetColor(color);
-    ofEllipse(0, 0, r, r);
+    ofEllipse(0, -r*1.5, r*1.5, r*2);
     ofPopMatrix();
 	ofDisableAlphaBlending();
     
@@ -149,7 +147,7 @@ void Boid::intersects(myBlob* blob, vector<Boid*> boids){
                        
         } else {
             
-            r = 8;
+        //    r = 8;
             maxspeed = 10;
          
             force =  blob->cen - predictLoc;

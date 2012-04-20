@@ -21,7 +21,8 @@ myBlob::myBlob(ofPoint c, vector<ofPoint> pts, int blobNo)
     blobDelete = false;
     blobId = blobNo;
     
-    timer = 127;
+    alpha = 255;
+    timer = 200;
     
 }
 
@@ -38,7 +39,9 @@ void myBlob::update(ofxCvBlob _cv)
 
 void myBlob::draw()
 {
-    ofSetColor(flockcolor);
+    ofEnableSmoothing();
+    ofSetLineWidth(timer/10);
+    ofSetColor(flockcolor, timer);
     ofNoFill();
     ofBeginShape();
     
@@ -55,6 +58,7 @@ void myBlob::draw()
 void myBlob::countDown()
 {
     timer--;
+    alpha -= 2;
     
 }
 
