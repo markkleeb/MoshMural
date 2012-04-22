@@ -17,7 +17,9 @@ Boid::Boid(ofPoint centroid) {
     
 	acc = 0;
 	
-    r = 2.0;
+    
+   // cout << "r: " << r << endl;
+    
     maxspeed = 2;
     maxforce = 0.1;
     vel = 0;//ofPoint(-maxspeed, 0);
@@ -55,6 +57,7 @@ void Boid::update(vector<Boid*> boids) {
 
 void Boid::flock(vector<Boid*> boids){
     
+    
     ofPoint sep = separate(boids);
 	ofPoint ali = align(boids);
 	ofPoint coh = cohesion(boids);
@@ -67,7 +70,9 @@ void Boid::flock(vector<Boid*> boids){
 	acc += sep + ali + coh;
 }
 
-void Boid::draw(ofColor color) {
+void Boid::draw(ofColor color, float rad) {
+    
+    r= 2.5;
     
     // Draw a triangle rotated in the direction of velocity
         
@@ -141,7 +146,7 @@ void Boid::intersects(myBlob* blob, vector<Boid*> boids){
         {   
            
             
-            r = 2.5;
+           r = 2.5;
             maxspeed = 5;
             flock(boids);
                        

@@ -32,13 +32,13 @@ void Flock::update(myBlob* blob) {
 	}
 }
 
-void Flock::draw(myBlob* blob) {
+void Flock::draw(myBlob* blob, float rad) {
     
     
 	
     
     for(int i=0; i<boids.size(); i++) {
-		boids[i]->draw(color);
+		boids[i]->draw(color, rad);
         
         if(boids[i]->debug){
            

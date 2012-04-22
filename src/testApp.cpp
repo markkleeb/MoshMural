@@ -4,7 +4,9 @@
 //--------------------------------------------------------------
 void testApp::setup(){
     
+   /*
     //soundstream stuff
+    
     
     srand((unsigned int)time((time_t *)NULL));
 	
@@ -27,7 +29,9 @@ void testApp::setup(){
     }
     
     //end FFT stuff
+    */
     
+    ali = false;
     
     blobCount = 0;
     startX = 1100;
@@ -72,7 +76,7 @@ void testApp::setup(){
 	framenum=0;
 	doCapture=false;
     
-    ofSoundStreamSetup(0, 1, this, 44100, 256, 4);
+    //ofSoundStreamSetup(0, 1, this, 44100, 256, 4);
 
 
     
@@ -87,6 +91,8 @@ void testApp::update(){
     ofBackground(0, 0, 0);
     
     kinect.update();
+    
+    mesh->update();
     
     
     
@@ -131,38 +137,7 @@ void testApp::update(){
 	}
     
     
-    
-    //FFT stuff
-    
-    
-	static int index=0;
-	float avg_power = 0.0f;	
-	
-	if(index < 80)
-		index += 1;
-	else
-		index = 0;
-	
-	/* do the FFT	*/
-	myfft.powerSpectrum(0,(int)BUFFER_SIZE/2, left,BUFFER_SIZE,&magnitude[0],&phase[0],&power[0],&avg_power);
-	
-	/* start from 1 because mag[0] = DC component */
-	/* and discard the upper half of the buffer */
-	for(int j=1; j < BUFFER_SIZE/2; j++) {
-		freq[index][j] = magnitude[j];		
-	}
-    
-
-    /* draw the FFT */
-	for (int i = 1; i < (int)(BUFFER_SIZE/2); i++){
-        
-		ofLine(200+(i*8),400,200+(i*8),400-magnitude[i]*10.0f);
-	
-     //   cout << "magnitude " << i << " : " << magnitude[i] <<"\n";
-
-    
-}
-        
+           
 
     //scenario 1 - no blobs: make a blob for each CV blob
     
@@ -295,11 +270,58 @@ void testApp::update(){
 void testApp::draw(){
     
         
+   /* 
+    
+    //FFT stuff
+    maxMagnitude = 0;
+    
+	int max = 0;
+    int f = -1;
+	static int index=0;
+	float avg_power = 0.0f;	
+	
+	if(index < 80)
+		index += 1;
+	else
+		index = 0;
+    
 
+	
+	do the FFT
+	myfft.powerSpectrum(0,(int)BUFFER_SIZE/2, left,BUFFER_SIZE,&magnitude[0],&phase[0],&power[0],&avg_power);
+	
+	// start from 1 because mag[0] = DC component 
+	// and discard the upper half of the buffer 
+	for(int j=1; j < BUFFER_SIZE/2; j++) {
+		freq[index][j] = magnitude[j];		
+        if (magnitude[j] > max ) {
+            max = magnitude[j];
+            f = j;
+            maxMagnitude = magnitude[f];
+            
+            
+            //   cout << "mm: " << maxMagnitude << endl;
+            
+        }
+	}
+*/
+    
+    	kinectImage(); 
+    
+    if(ali){
+        
+        mesh->draw();
+        
+    }
+    
+    else{
+        
+       
+    
     
     ofSetColor(255, 255, 255);
     
-	kinectImage(); 
+
     
    
     
@@ -308,18 +330,12 @@ void testApp::draw(){
         
         myBlobs[i]->draw();
         
-        flocks[i]->draw(myBlobs[i]);
+        flocks[i]->draw(myBlobs[i], maxMagnitude);
         
     }
     
     
-    
-//    cout << " " << ofGetFrameNum();
-    
-      
- 
-//	capture();
-    
+    }
    
        
 
@@ -329,8 +345,12 @@ void testApp::draw(){
 void testApp::keyPressed(int key){
     switch (key) {
 		case ' ':
-			bThreshWithOpenCV = !bThreshWithOpenCV;
-			break;
+			//bThreshWithOpenCV = !bThreshWithOpenCV;
+			
+            ali = !ali;
+            
+            
+            break;
 			
 		case'p':
             if (kinectOn) {

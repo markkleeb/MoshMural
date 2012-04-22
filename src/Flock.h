@@ -19,7 +19,7 @@ class Flock {
 public:
 	Flock(ofColor fcolor);
 	void update(myBlob* blob);
-	void draw(myBlob* blob);
+	void draw(myBlob* blob, float rad);
 	void addBoid(ofPoint centroid);
 	
      

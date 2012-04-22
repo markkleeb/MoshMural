@@ -7,6 +7,7 @@
 #include "Flock.h"
 #include "myBlob.h"
 #include "fft.h"
+#include "kinectMesh.h"
 
 #define BUFFER_SIZE 256
 #define NUM_WINDOWS 80
@@ -58,10 +59,13 @@ class testApp : public ofSimpleApp{
         ofxCvContourFinder contourFinder;
         ofxCvBlob           CvBlob;
     
+        kinectMesh* mesh;
     
         bool bThreshWithOpenCV;
         bool bDrawPointCloud;
         bool kinectOn;
+    
+    bool ali;
     
         ofPoint overlap(ofxCvBlob b1, ofxCvBlob b2);
         
@@ -69,7 +73,8 @@ class testApp : public ofSimpleApp{
         int farThreshold;
         
         int blobCount;
-    
+
+    float maxMagnitude;
         int angle;
         
         // used for viewing the point cloud
