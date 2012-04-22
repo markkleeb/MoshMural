@@ -31,11 +31,11 @@ void testApp::setup(){
     //end FFT stuff
     */
     
-    /*
-    mesh = new kinectMesh();
+    
+    mesh = new kinectMesh(kinect);
     mesh->setup();
     ali = false;
-    */
+    
     blobCount = 0;
     startX = 1100;
     startY = 650;
@@ -93,11 +93,11 @@ void testApp::update(){
  
 
     
- /*   
+    
     if(mesh->active){
     mesh->update();
     }
-   */ 
+   
     if(!mesh->active){
     
     ofBackground(0, 0, 0);
@@ -317,13 +317,13 @@ void testApp::draw(){
 	}
 */
     
-    /*	    
+    	    
     if(mesh->active){
         
         mesh->draw();
         
     }
-     */
+    
     
     if(!mesh->active){
         

@@ -9,7 +9,9 @@
 #include <iostream>
 #include "kinectMesh.h"
 
-kinectMesh::kinectMesh() {
+kinectMesh::kinectMesh(ofxKinect kinect2) {
+    
+    kinect = kinect2;
     
     active = false;
     

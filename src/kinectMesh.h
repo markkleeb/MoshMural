@@ -15,7 +15,7 @@
 class kinectMesh {
     
 public:
-    kinectMesh();
+    kinectMesh(ofxKinect kinect2);
     ~kinectMesh();
     
     void                setup();
