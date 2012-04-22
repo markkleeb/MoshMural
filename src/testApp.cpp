@@ -32,10 +32,7 @@ void testApp::setup(){
     */
     
     
-    mesh = new kinectMesh(kinect);
-    mesh->setup();
-    ali = false;
-    
+    mesh = new kinectMesh(kinect);    
     blobCount = 0;
     startX = 1100;
     startY = 650;
@@ -91,16 +88,15 @@ void testApp::update(){
     
     
  
-
-    
-    
-    if(mesh->active){
-    mesh->update();
-    }
-   
-    if(!mesh->active){
     
     ofBackground(0, 0, 0);
+    
+    
+    
+    mesh->update();
+    
+    if(!mesh->active){
+    
     
     kinect.update();
     
@@ -317,13 +313,8 @@ void testApp::draw(){
 	}
 */
     
-    	    
-    if(mesh->active){
-        
-        mesh->draw();
-        
-    }
-    
+
+    mesh->draw();    
     
     if(!mesh->active){
         

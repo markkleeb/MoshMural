@@ -65,8 +65,6 @@ class testApp : public ofSimpleApp{
         bool bDrawPointCloud;
         bool kinectOn;
     
-    bool ali;
-    
         ofPoint overlap(ofxCvBlob b1, ofxCvBlob b2);
         
         int nearThreshold;

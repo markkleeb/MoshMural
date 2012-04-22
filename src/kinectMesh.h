@@ -15,19 +15,21 @@
 class kinectMesh {
     
 public:
-    kinectMesh(ofxKinect kinect2);
+    kinectMesh(ofxKinect &kinect2);
+    kinectMesh();
     ~kinectMesh();
     
     void                setup();
     void                update();
     void                draw();
+    void                init();
     
     void                raiseLower();
     void                lowerLower();
     void                raiseUpper();
     void                lowerUpper();
     
-    ofxKinect           kinect;
+    ofxKinect *         kinect;
     
     vector<ofPolyline>  lines;
     

@@ -9,10 +9,26 @@
 #include <iostream>
 #include "kinectMesh.h"
 
-kinectMesh::kinectMesh(ofxKinect kinect2) {
+kinectMesh::kinectMesh(ofxKinect &kinect2) {
     
-    kinect = kinect2;
+    kinect = &kinect2;
     
+
+}
+kinectMesh::kinectMesh() {
+    
+    kinect = new ofxKinect();
+    
+    
+}
+
+kinectMesh::~kinectMesh() {
+    kinect->close();
+    delete kinect;
+
+}
+
+void kinectMesh::init() {
     active = false;
     
     int numOfLines = 200;
@@ -31,8 +47,8 @@ kinectMesh::kinectMesh(ofxKinect kinect2) {
     rows = lines[0].getVertices().size();
     cols = lines.size();
     
-    kW = kinect.getWidth();
-    kH = kinect.getHeight();
+    kW = kinect->getWidth();
+    kH = kinect->getHeight();
     kX = kW/cols;
     kY = kH/rows;
     
@@ -40,17 +56,13 @@ kinectMesh::kinectMesh(ofxKinect kinect2) {
     active = true;
     tick = 0;
     upl = 9757;
-}
-
-kinectMesh::~kinectMesh() {
-    kinect.close();
-
+    
 }
 
 void kinectMesh::setup() {
-    kinect.setRegistration(true);
-	kinect.init();
-	kinect.open();
+    kinect->setRegistration(true);
+	kinect->init();
+	kinect->open();
     
 }
 
@@ -66,9 +78,9 @@ void kinectMesh::draw() {
 
 void kinectMesh::update() {
     if (active) {
-        kinect.update();
+        kinect->update();
     
-        img = kinect.getRawDepthPixels();
+        img = kinect->getRawDepthPixels();
     
         for (int x = 0; x < kW; x += kX) {
             for (int y = 0; y < kH; y += kY) {
