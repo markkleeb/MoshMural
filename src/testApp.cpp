@@ -31,8 +31,11 @@ void testApp::setup(){
     //end FFT stuff
     */
     
+    /*
+    mesh = new kinectMesh();
+    mesh->setup();
     ali = false;
-    
+    */
     blobCount = 0;
     startX = 1100;
     startY = 650;
@@ -88,12 +91,18 @@ void testApp::update(){
     
     
  
+
+    
+ /*   
+    if(mesh->active){
+    mesh->update();
+    }
+   */ 
+    if(!mesh->active){
+    
     ofBackground(0, 0, 0);
     
     kinect.update();
-    
-    mesh->update();
-    
     
     
     // there is a new frame and we are connected
@@ -263,6 +272,8 @@ void testApp::update(){
     
     
     }
+        
+    }
 
 
 
@@ -306,16 +317,18 @@ void testApp::draw(){
 	}
 */
     
-    	kinectImage(); 
-    
-    if(ali){
+    /*	    
+    if(mesh->active){
         
         mesh->draw();
         
     }
+     */
     
-    else{
+    if(!mesh->active){
         
+        kinectImage(); 
+
        
     
     
@@ -345,9 +358,9 @@ void testApp::draw(){
 void testApp::keyPressed(int key){
     switch (key) {
 		case ' ':
-			//bThreshWithOpenCV = !bThreshWithOpenCV;
+			bThreshWithOpenCV = !bThreshWithOpenCV;
 			
-            ali = !ali;
+            mesh->active = !mesh->active;
             
             
             break;

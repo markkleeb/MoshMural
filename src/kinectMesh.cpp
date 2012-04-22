@@ -11,6 +11,8 @@
 
 kinectMesh::kinectMesh() {
     
+    active = false;
+    
     int numOfLines = 200;
     
     scale = ofGetWindowWidth()/numOfLines;
