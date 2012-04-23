@@ -15,7 +15,7 @@ myBlob::myBlob(ofPoint c, vector<ofPoint> pts, int blobNo)
     cen = c;
     points = pts;
     
-    flockcolor = ofColor(ofRandom(20, 255), ofRandom(20,255), ofRandom(20, 255));
+    flockcolor = ofColor(ofRandom(70, 255), ofRandom(70,255), ofRandom(70, 255));
     
     available = true;
     blobDelete = false;
@@ -40,7 +40,7 @@ void myBlob::update(ofxCvBlob _cv)
 void myBlob::draw()
 {
     ofEnableSmoothing();
-    ofSetLineWidth(timer/10);
+    ofSetLineWidth(10);
     ofSetColor(flockcolor, timer);
     ofNoFill();
     ofBeginShape();
