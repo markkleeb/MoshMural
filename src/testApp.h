@@ -8,6 +8,8 @@
 #include "myBlob.h"
 #include "fft.h"
 #include "kinectMesh.h"
+#include "crack.h"
+#include "crackLine.h"
 
 #define BUFFER_SIZE 256
 #define NUM_WINDOWS 80
@@ -48,6 +50,7 @@ public:
     
     vector<Flock*> flocks;
     vector<myBlob*> myBlobs;
+    vector<crack*> cracks;
     
     
     ofxCvColorImage colorImg;
@@ -61,6 +64,9 @@ public:
     
     kinectMesh* mesh;
     
+    
+    
+    bool cracking;
     bool bThreshWithOpenCV;
     bool bDrawPointCloud;
     bool kinectOn;

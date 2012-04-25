@@ -15,7 +15,7 @@ myBlob::myBlob(ofPoint c, vector<ofPoint> pts, int blobNo)
     cen = c;
     points = pts;
     
-    flockcolor = ofColor(ofRandom(70, 255), ofRandom(70,255), ofRandom(70, 255));
+    flockcolor = ofColor(ofRandom(100, 255), ofRandom(100,255), ofRandom(100, 255));
     
     available = true;
     blobDelete = false;

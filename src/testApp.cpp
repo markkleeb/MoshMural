@@ -263,6 +263,7 @@ void testApp::update(){
             flocks.push_back(new Flock(myBlobs[i]->flockcolor));
             
             flocks[i]->update(myBlobs[i]);
+            cracks[i]->update(myBlobs[i]);
         }
         
         
@@ -313,10 +314,23 @@ void testApp::draw(){
      }
      */
     
+    if(mesh->active){
+    
     
     mesh->draw();    
+    }
     
-    if(!mesh->active){
+    else if(cracking){
+        
+        for(int i = 0; i < myBlobs.size(); i++){
+            myBlobs[i]->draw();
+            cracks[i]->draw(myBlobs[i]);
+        }
+        
+        
+    }
+    
+    else{
         
         kinectImage(); 
         
@@ -355,6 +369,14 @@ void testApp::keyPressed(int key){
             
             
             break;
+            
+        case 'b':
+            
+            
+            cracking = !cracking;
+            
+            break;
+            
             
 		case'p':
             if (kinectOn) {

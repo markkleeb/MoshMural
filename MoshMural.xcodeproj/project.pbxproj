@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		512B926A14F864930061B9BC /* Boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512B926814F864930061B9BC /* Boid.cpp */; };
+		515E1BFF15486E0C00219A33 /* crack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 515E1BFE15486E0C00219A33 /* crack.cpp */; };
+		515E1C021548719B00219A33 /* crackLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 515E1C011548719B00219A33 /* crackLine.cpp */; };
 		5178E4D214FC000100344C90 /* opencv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5178E4BE14FC000100344C90 /* opencv.a */; };
 		5178E4D314FC000100344C90 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5178E4C114FC000100344C90 /* ofxCvColorImage.cpp */; };
 		5178E4D414FC000100344C90 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5178E4C414FC000100344C90 /* ofxCvContourFinder.cpp */; };
@@ -80,6 +82,10 @@
 /* Begin PBXFileReference section */
 		512B926814F864930061B9BC /* Boid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Boid.cpp; sourceTree = "<group>"; };
 		512B926914F864930061B9BC /* Boid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
+		515E1BFD15486E0100219A33 /* crack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crack.h; sourceTree = "<group>"; };
+		515E1BFE15486E0C00219A33 /* crack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crack.cpp; sourceTree = "<group>"; };
+		515E1C001548719200219A33 /* crackLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crackLine.h; sourceTree = "<group>"; };
+		515E1C011548719B00219A33 /* crackLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crackLine.cpp; sourceTree = "<group>"; };
 		5178E46814FC000100344C90 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		5178E46D14FC000100344C90 /* cv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cv.h; sourceTree = "<group>"; };
 		5178E46E14FC000100344C90 /* cv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cv.hpp; sourceTree = "<group>"; };
@@ -905,6 +911,10 @@
 				51B1B55A15448638004C3437 /* kinectMesh.h */,
 				51F1E5B51540D52E00FCFE83 /* fft.cpp */,
 				51F1E5B41540D51F00FCFE83 /* fft.h */,
+				515E1BFD15486E0100219A33 /* crack.h */,
+				515E1BFE15486E0C00219A33 /* crack.cpp */,
+				515E1C001548719200219A33 /* crackLine.h */,
+				515E1C011548719B00219A33 /* crackLine.cpp */,
 				5193931C1525343C003A941B /* Flock.h */,
 				5193931D15253445003A941B /* Flock.cpp */,
 				512B926914F864930061B9BC /* Boid.h */,
@@ -1031,6 +1041,8 @@
 				51CE71751538BA45000A319C /* myBlob.cpp in Sources */,
 				51F1E5B61540D52E00FCFE83 /* fft.cpp in Sources */,
 				51B1B55B15448638004C3437 /* kinectMesh.cpp in Sources */,
+				515E1BFF15486E0C00219A33 /* crack.cpp in Sources */,
+				515E1C021548719B00219A33 /* crackLine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
