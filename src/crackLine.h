@@ -11,7 +11,6 @@
 
 #include "ofMain.h"
 #include "myBlob.h"
-#include "crack.h"
 
 
 class crackLine{

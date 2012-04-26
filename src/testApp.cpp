@@ -32,7 +32,8 @@ void testApp::setup(){
      */
     
     
-    mesh = new kinectMesh(kinect);    
+    mesh = new kinectMesh(kinect);  
+    cracking = false;
     blobCount = 0;
     startX = 1100;
     startY = 650;
@@ -76,7 +77,7 @@ void testApp::setup(){
 	framenum=0;
 	doCapture=false;
     
-    //ofSoundStreamSetup(0, 1, this, 44100, 256, 4);
+    
     
     
     
@@ -248,6 +249,7 @@ void testApp::update(){
             {
                 myBlobs.erase(myBlobs.begin() +i);
                 flocks.erase(flocks.begin() +i);
+                cracks.erase(cracks.begin() +i);
             }
             
             
@@ -260,10 +262,22 @@ void testApp::update(){
         
         for(int i=0; i < myBlobs.size(); i++){
             
-            flocks.push_back(new Flock(myBlobs[i]->flockcolor));
+            if(!mesh->active){
             
-            flocks[i]->update(myBlobs[i]);
-            cracks[i]->update(myBlobs[i]);
+                if(cracking){
+            
+                    cracks.push_back(new crack(myBlobs[i]->flockcolor));
+                    cracks[i]->update(myBlobs[i]);
+                    
+                }
+                else{
+                    
+                    flocks.push_back(new Flock(myBlobs[i]->flockcolor));
+                    
+                    flocks[i]->update(myBlobs[i]);
+           
+                }   
+            }
         }
         
         

@@ -69,7 +69,7 @@ void kinectMesh::setup() {
 
 void kinectMesh::draw() {
     if (active) {
-        ofSetColor(255, 100, 100);
+        ofSetColor(255, 150, 150);
          ofSetLineWidth(1);
         for (int i = 0; i < lines.size(); i++ ) {
             lines[i].draw();

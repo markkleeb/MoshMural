@@ -26,7 +26,7 @@ void crackLine::update(vector<ofPoint> pts){
     
     for(int i = 0; i < path.size(); i++){
         
-        float d = 0.2;
+        float d = 0.1;
         ofPoint temppath = path[i];
         
         for(int j=0; j < pts.size(); j++){
@@ -35,6 +35,15 @@ void crackLine::update(vector<ofPoint> pts){
          
             walking = false;
         }
+            ofPolyline l;
+            l.addVertexes(pts);
+            
+            if(!l.inside(temppath)){
+                
+              path.erase(path.begin() + i);
+                
+                
+            }
             
         }
         
@@ -49,7 +58,7 @@ void crackLine::update(vector<ofPoint> pts){
 void crackLine::draw(ofColor color){
     
     ofSetLineWidth(1);
-    ofSetColor(255);
+    ofSetColor(color);
     ofBeginShape();
     ofNoFill();
     for(int i = 0; i < path.size(); i++){

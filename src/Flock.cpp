@@ -20,7 +20,7 @@ Flock::Flock(ofColor fcolor) {
 
 void Flock::update(myBlob* blob) {
     
-    while(boids.size() < 500){
+    while(boids.size() < 800){
         
         addBoid(blob->cen);
     }

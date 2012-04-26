@@ -34,7 +34,7 @@ void crack::update(myBlob* blob) {
                 crackLines[i]->vel.x += ofRandom(-1,1);
                 crackLines[i]->vel.y += ofRandom(-1,1);
                 
-                if(ofRandom(1) < 0.25){
+                if(ofRandom(1) < 0.5){
                     
                     addCrack(crackLines[i]->loc);
                     
@@ -48,15 +48,19 @@ void crack::update(myBlob* blob) {
 
 void crack::draw(myBlob* blob) {
     
+    ofPushMatrix();
+    ofTranslate(blob->cen);
+    
     
     for(int i=crackLines.size()-1; i>=0; i--) {
 		crackLines[i]->draw(color);
         
         
+        
 	}
     
     
-    
+    ofPopMatrix();
     
     
 }

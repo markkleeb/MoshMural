@@ -14,7 +14,6 @@
 #include "myBlob.h"
 #include "crackLine.h"
 
-
 class crack{
   
 public:
