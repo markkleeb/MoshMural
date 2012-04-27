@@ -12,13 +12,14 @@
 kinectMesh::kinectMesh(ofxKinect &kinect2) {
     
     kinect = &kinect2;
+    init();
     
 
 }
 kinectMesh::kinectMesh() {
     
     kinect = new ofxKinect();
-    
+    init();
     
 }
 
