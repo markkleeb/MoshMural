@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410CDE0C154E2E34008D6C91 /* MyBlobs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 410CDE0A154E2E34008D6C91 /* MyBlobs.cpp */; };
+		4133C0EB154F2C0000440EBD /* Boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4133C0E9154F2BFF00440EBD /* Boid.cpp */; };
+		4133C0F7154F3D7700440EBD /* MyFlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4133C0F5154F3D7600440EBD /* MyFlock.cpp */; };
 		418A9B1A153C9C7600189868 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 418A9A4C153C9C7500189868 /* cameras.c */; };
 		418A9B1B153C9C7600189868 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 418A9A4F153C9C7500189868 /* core.c */; };
 		418A9B1D153C9C7600189868 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 418A9A59153C9C7600189868 /* registration.c */; };
@@ -73,6 +76,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		410CDE0A154E2E34008D6C91 /* MyBlobs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyBlobs.cpp; sourceTree = "<group>"; };
+		410CDE0B154E2E34008D6C91 /* MyBlobs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBlobs.h; sourceTree = "<group>"; };
+		4133C0E9154F2BFF00440EBD /* Boid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Boid.cpp; sourceTree = "<group>"; };
+		4133C0EA154F2C0000440EBD /* Boid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
+		4133C0F5154F3D7600440EBD /* MyFlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyFlock.cpp; sourceTree = "<group>"; };
+		4133C0F6154F3D7600440EBD /* MyFlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlock.h; sourceTree = "<group>"; };
 		418A9A4C153C9C7500189868 /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cameras.c; sourceTree = "<group>"; };
 		418A9A4D153C9C7500189868 /* cameras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameras.h; sourceTree = "<group>"; };
 		418A9A4F153C9C7500189868 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
@@ -638,11 +647,17 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4133C0F5154F3D7600440EBD /* MyFlock.cpp */,
+				4133C0F6154F3D7600440EBD /* MyFlock.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
+				4133C0E9154F2BFF00440EBD /* Boid.cpp */,
+				4133C0EA154F2C0000440EBD /* Boid.h */,
+				410CDE0B154E2E34008D6C91 /* MyBlobs.h */,
+				410CDE0A154E2E34008D6C91 /* MyBlobs.cpp */,
 				41F2EBB61541D5F200C52329 /* kinectMesh.cpp */,
 				41F2EBB71541D5F200C52329 /* kinectMesh.h */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -683,8 +698,11 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "moshMural" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -756,6 +774,9 @@
 				418A9B28153C9C7600189868 /* ofxCvImage.cpp in Sources */,
 				418A9B29153C9C7600189868 /* ofxCvShortImage.cpp in Sources */,
 				41F2EBB81541D5F200C52329 /* kinectMesh.cpp in Sources */,
+				410CDE0C154E2E34008D6C91 /* MyBlobs.cpp in Sources */,
+				4133C0EB154F2C0000440EBD /* Boid.cpp in Sources */,
+				4133C0F7154F3D7700440EBD /* MyFlock.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -836,7 +857,6 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = G4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -917,7 +937,6 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../addons/ofxKinect/libs/libusb/osx/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"";
-				PREBINDING = NO;
 				PRODUCT_NAME = moshMuralDebug;
 				WRAPPER_EXTENSION = app;
 			};
@@ -932,7 +951,6 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../libs/glut/lib/osx\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1013,7 +1031,6 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../addons/ofxKinect/libs/libusb/osx/libs\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"";
-				PREBINDING = NO;
 				PRODUCT_NAME = moshMural;
 				WRAPPER_EXTENSION = app;
 			};
