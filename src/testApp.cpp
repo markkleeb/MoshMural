@@ -93,7 +93,6 @@ void testApp::update(){
     ofBackground(0, 0, 0);
     
     
-    
     mesh->update();
     
     if(!mesh->active){
@@ -154,6 +153,9 @@ void testApp::update(){
                 myBlobs.push_back(new myBlob(contourFinder.blobs[i].centroid, contourFinder.blobs[i].pts, blobCount));
                 blobCount++;
                 
+                //flocks.push_back(new Flock(myBlobs[i]->flockcolor));
+
+                
             }
         }
         
@@ -195,6 +197,8 @@ void testApp::update(){
                     
                     blobCount++;
                     
+                  //  flocks.push_back(new Flock(myBlobs[i]->flockcolor));
+
                 }
                 
             }
@@ -248,38 +252,12 @@ void testApp::update(){
             if(myBlobs[i]->blobDelete)
             {
                 myBlobs.erase(myBlobs.begin() +i);
-                flocks.erase(flocks.begin() +i);
-                cracks.erase(cracks.begin() +i);
+            //    flocks.erase(flocks.begin() +i);
+             //   cracks.erase(cracks.begin() +i);
             }
             
             
         }
-        
-        
-        
-        
-        
-        
-        for(int i=0; i < myBlobs.size(); i++){
-            
-            if(!mesh->active){
-            
-                if(cracking){
-            
-                    cracks.push_back(new crack(myBlobs[i]->flockcolor));
-                    cracks[i]->update(myBlobs[i]);
-                    
-                }
-                else{
-                    
-                    flocks.push_back(new Flock(myBlobs[i]->flockcolor));
-                    
-                    flocks[i]->update(myBlobs[i]);
-           
-                }   
-            }
-        }
-        
         
         
     }
@@ -338,7 +316,7 @@ void testApp::draw(){
         
         for(int i = 0; i < myBlobs.size(); i++){
             myBlobs[i]->draw();
-            cracks[i]->draw(myBlobs[i]);
+           // cracks[i]->draw(myBlobs[i]);
         }
         
         
@@ -362,7 +340,6 @@ void testApp::draw(){
             
             myBlobs[i]->draw();
             
-            flocks[i]->draw(myBlobs[i], maxMagnitude);
             
         }
         

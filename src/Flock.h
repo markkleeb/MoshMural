@@ -13,16 +13,15 @@
 #include "ofMain.h"
 #include "Boid.h"
 #include "ofxOpenCV.h"
-#include "myBlob.h"
+
 
 class Flock {
 public:
 	Flock(ofColor fcolor);
-	void update(myBlob* blob);
-	void draw(myBlob* blob, float rad);
+	void update(ofPoint cen, vector<ofPoint> pts);
+	void draw(ofPoint cen);
 	void addBoid(ofPoint centroid);
 	
-     
     
     ofColor color;
     

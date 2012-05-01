@@ -16,19 +16,12 @@ Boid::Boid(ofPoint centroid) {
 	loc.y = ofRandom(centroid.y-10, centroid.y+10);   
     
 	acc = 0;
-	
-    
-   // cout << "r: " << r << endl;
-    
+
     maxspeed = 2;
     maxforce = 0.1;
-    vel = 0;//ofPoint(-maxspeed, 0);
+    vel = 0;
     wandertheta = 0.0;
-   // objAvoidScalar = 10;
     debug = false;
-    
- //   i.loadImage("airplane.png");
- //   i.resize(25,30);
     
     counter = 0;
     avoidObject = false;
@@ -37,10 +30,9 @@ Boid::Boid(ofPoint centroid) {
 
 
 // Method to update location
-void Boid::update(vector<Boid*> boids) {
+void Boid::update(ofPoint cen, vector<ofPoint> points, vector<Boid*> boids) {
     
     
-  
     vel += acc;   // Update velocity
     vel.x = ofClamp(vel.x, -maxspeed, maxspeed);  // Limit speed
 	vel.y = ofClamp(vel.y, -maxspeed, maxspeed);  // Limit speed
@@ -53,7 +45,32 @@ void Boid::update(vector<Boid*> boids) {
     acc = 0;  // Reset accelertion to 0 each cycle
 	
 
+    
+    predictLoc = loc + vel*10;  // A vector pointing from the location to where the boid is heading
+    
+    
+    //check bounds
+    
+    ofPolyline l;
+    l.addVertexes(points);
+    
+    if(l.inside(predictLoc))
+    {   
+        r = 2.5;
+        maxspeed = 5;
+        flock(boids);
+        
+    } else {
+        
+        maxspeed = 10;
+        
+        force =  cen - predictLoc;
+        acc += force.normalize()* 2.5;
+        
+    }
+    
 }
+
 
 void Boid::flock(vector<Boid*> boids){
     
@@ -63,14 +80,15 @@ void Boid::flock(vector<Boid*> boids){
 	ofPoint coh = cohesion(boids);
 	
 	// Arbitrarily weight these forces
-	sep *= 10.0;
+	sep *= 8.0;
 	ali *= 1.0;
 	coh *= 1.0;
 	
 	acc += sep + ali + coh;
 }
 
-void Boid::draw(ofColor color, float rad) {
+
+void Boid::draw(ofColor color) {
     
     r= 2.5;
     
@@ -94,7 +112,7 @@ void Boid::draw(ofColor color, float rad) {
 	ofBeginShape();
     ofVertex(0, r);
     ofVertex(2*r/3, -r*1.5);
-     ofVertex(-2*r/3, -r*1.5);
+    ofVertex(-2*r/3, -r*1.5);
     ofEndShape(true);
     ofSetColor(color);
     ofEllipse(0, -r*1.5, r*1.5, r*2);
@@ -132,81 +150,6 @@ void Boid::draw(ofColor color, float rad) {
     
 }
 
-void Boid::intersects(myBlob* blob, vector<Boid*> boids){
-    
-  
-    predictLoc = loc + vel*10;  // A vector pointing from the location to where the boid is heading
-    
-    
-        //myBlob temp = blob;
-        ofPolyline l;
-        l.addVertexes(blob->points);
-        
-        if(l.inside(predictLoc))
-        {   
-           
-            
-           r = 2.5;
-            maxspeed = 5;
-            flock(boids);
-                       
-        } else {
-            
-        //    r = 8;
-            maxspeed = 10;
-         
-            force =  blob->cen - predictLoc;
-            acc += force.normalize()* 2.5;
-            //cout << "bounce!\n";
-
-            
-        }
-        
-        
-        
-    
-  
-
-        
-}
-
-           
-ofPoint Boid::getNormalPoint(ofPoint p, ofPoint a, ofPoint b) {
-	
-    // Vector from a to p
-    ofPoint ap = p - a;
-	
-    // Vector from a to b
-    ofPoint ab = b - a;
-	
-//	Path::normalize(&ab); // Normalize the line
-	
-    // Project vector "diff" onto line by using the dot product
-//    ab *= dotproduct(ab, ap);
-	
-    return a + ab;
-}
-
-void Boid::wander() {
-    float wanderR = 16.0f;         // Radius for our "wander circle"
-    float wanderD = 50.0f;         // Distance for our "wander circle"
-    float change = 0.3f;//0.25f;
-    wandertheta += ofRandom(-change, change); // Randomly change wander theta
-    
-    // Now we have to calculate the new location to steer towards on the wander circle
-    ofPoint circleloc;
-    circleloc.set(vel.x, vel.y);  // Start with velocity
-    circleloc.normalize();            // Normalize to get heading
-    circleloc *= wanderD;          // Multiply by distance
-    circleloc += loc;               // Make it relative to boid's location
-    
-    ofPoint circleOffSet;
-    circleOffSet.set(wanderR*cos(wandertheta),wanderR*sin(wandertheta));
-    ofPoint target = circleloc + circleOffSet;
-    
-    acc += steer(target,false);  // Steer towards it
-    
-} 
 
 
 ofPoint Boid::steer(ofPoint target, bool slowdown) {
@@ -232,16 +175,6 @@ ofPoint Boid::steer(ofPoint target, bool slowdown) {
     return steer;
 }
 
-
-void Boid::seek(ofPoint target) {
-    acc += steer(target, false);
-//    cout << "SEEK\n";
-}
-
-void Boid::arrive(ofPoint target) {
-    acc += steer(target, true);
-    cout << "ARRIVE\n";
-}
 
 
 // Separation

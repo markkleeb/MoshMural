@@ -21,19 +21,24 @@ myBlob::myBlob(ofPoint c, vector<ofPoint> pts, int blobNo)
     blobDelete = false;
     blobId = blobNo;
     
-    alpha = 255;
     timer = 200;
+    
+    
+
+    myFlock = new Flock(flockcolor);
+    
     
 }
 
 void myBlob::update(ofxCvBlob _cv)
 {
- //   points.clear();
+
     cen = _cv.centroid;
     points = _cv.pts;    
     
  
- 
+    myFlock->update(cen, points);
+    
 
 }
 
@@ -41,7 +46,7 @@ void myBlob::draw()
 {
     ofEnableSmoothing();
     ofSetLineWidth(10);
-    ofSetColor(flockcolor, timer);
+    ofSetColor(flockcolor);
     ofNoFill();
     ofBeginShape();
     
@@ -51,6 +56,9 @@ void myBlob::draw()
     }
     
     ofEndShape();
+
+    myFlock->draw(cen);
+
 }
 
 
@@ -58,7 +66,6 @@ void myBlob::draw()
 void myBlob::countDown()
 {
     timer--;
-    alpha -= 2;
     
 }
 

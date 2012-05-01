@@ -14,53 +14,39 @@ Flock::Flock(ofColor fcolor) {
     
     color = fcolor;
   
-    
-    
 }
 
-void Flock::update(myBlob* blob) {
+void Flock::update(ofPoint cen, vector<ofPoint> pts) {
     
-    while(boids.size() < 800){
+    while(boids.size() < 600){
         
-        addBoid(blob->cen);
+        addBoid(cen);
     }
     
 	for(int i=0; i<boids.size(); i++) {
-		boids[i]->update(boids);
-        boids[i]->intersects(blob, boids);
-        
+		boids[i]->update(cen, pts, boids);
+                
 	}
 }
 
-void Flock::draw(myBlob* blob, float rad) {
+void Flock::draw(ofPoint cen) {
     
     
 	
     
     for(int i=0; i<boids.size(); i++) {
-		boids[i]->draw(color, rad);
+		boids[i]->draw(color);
         
         if(boids[i]->debug){
            
                 
                 ofPushMatrix();
-                ofTranslate(blob->cen.x, blob->cen.y);
+                ofTranslate(cen.x, cen.y);
                 ofSetColor(0, 255, 0);
                 ofEllipse(0, 0, 10, 10);
                 ofPopMatrix();
-                
-                
-            
-            
         }
-        
-
 	}
-    
- 
-
-    
-    
 }
 
 void Flock::addBoid(ofPoint centroid) {

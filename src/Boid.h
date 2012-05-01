@@ -16,30 +16,27 @@
 #include "ofxCvContourFinder.h"
 #include "ofxOpenCv.h"
 #include "ofxKinect.h"
-#include "myBlob.h"
 
 
 
 class Boid {
     
     int objAvoidScalar;
-    ofImage i;
     int counter;
     bool avoidObject;
     
 public:
 	Boid(ofPoint centroid);
 	
-	void update(vector<Boid*> boids);
-	void draw(ofColor color, float rad);
-    void seek(ofPoint target);
-    void arrive(ofPoint target);
+	void update(ofPoint cen, vector<ofPoint> points, vector<Boid*> boids);
+	void draw(ofColor color);
     void flock(vector<Boid*> boids);
-    void wander();
 	
     ofPoint separate(vector<Boid*> boids);
     ofPoint align(vector<Boid*> boids);
 	ofPoint cohesion(vector<Boid*> boids);
+    
+    ofPoint steer(ofPoint target, bool slowdown);
     
 	ofPoint loc;
 	ofPoint vel;
@@ -56,23 +53,18 @@ public:
     float wandertheta;
     float record;
     
-    ofPoint getNormalPoint(ofPoint a, ofPoint b, ofPoint c);
     
     bool projected;
     bool debug;
-    
-   // ofxCvContourFinder contourFinder;
     
     
     vector<ofPoint> p;
     
  
-  //  ofPoint overlap(ofxCvBlob b1, ofxCvBlob b2);
-    
-    ofPoint steer(ofPoint target, bool slowdown);
+   
     
     
-    void intersects(myBlob* blob, vector<Boid*> boids);
+    
 };
 
 #endif

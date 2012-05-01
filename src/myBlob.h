@@ -10,6 +10,8 @@
 #define MoshMural_myBlob_h
 #include "ofMain.h"
 #include "ofxOpenCv.h"
+#include "Flock.h"
+
 
 class myBlob
 {
@@ -20,20 +22,21 @@ public:
     void draw();
     void countDown();
     
-    
     bool available;
     bool blobDelete;
     bool dead();
     
     ofColor flockcolor;
-    
     ofPoint cen;
+    ofPolyline line;
     
     vector<ofPoint> points;
    
-    int alpha;
     int timer;
     int blobId;
+   
+    Flock* myFlock;
+ 
     
 };
 
