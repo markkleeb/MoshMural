@@ -16,9 +16,9 @@ class kinectMesh {
     
 public:
     kinectMesh();
+    kinectMesh(ofxKinect& k);
     ~kinectMesh();
-    
-    void                setup();
+    void                setup( ofxKinect& k );
     void                update();
     void                draw();
     
@@ -27,7 +27,7 @@ public:
     void                raiseUpper();
     void                lowerUpper();
     
-    ofxKinect           kinect;
+    ofxKinect*           kinect;
     
     vector<ofPolyline>  lines;
     

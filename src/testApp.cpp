@@ -2,87 +2,170 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    k = new kinectMesh();
-    k->setup();
-    /*
     kinect.setRegistration(true);
     
 	kinect.init();
 	kinect.open();
+
+    mesh = kinectMesh(kinect);
+
+    nearThreshold           = 230;
+    farThreshold            = 90;
+    blobCount               = 0;
     
-    vW = 480;
-    vH = 360;
-    int numOfLines = 200;
-    scale = ofGetWindowWidth()/numOfLines;
-    video.initGrabber(vW, vH);
-    for (int i = 0; i < ofGetWindowWidth(); i += scale) {
-        vector<ofPoint> points;
-        for (int j = 0; j < ofGetWindowHeight(); j += scale) {
-            points.push_back(ofPoint(i, j, 0));
-        }
-        
-        lines.push_back(ofPolyline(points));
-        
-    }
-    rows = lines[0].getVertices().size();
-    cols = lines.size();*/
+    grayImage.allocate(kinect.width, kinect.height);
+	grayThreshNear.allocate(kinect.width, kinect.height);
+	grayThreshFar.allocate(kinect.width, kinect.height);
+    ofSetFrameRate(5);
+
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
-    k->update();
-    /*
-    video.update();
     kinect.update();
-    unsigned short * img = kinect.getRawDepthPixels();
-    int kW = kinect.getWidth();
-    int kH = kinect.getHeight();
-    int kX = kW/cols;
-    int kY = kH/rows;
-//    int[][] = {{5, 5}, {4, 3};
-    short upperLimit = 7000;
-    for (int x = 0; x< kW; x += kX) {
-        for (int y = 0; y < kH; y += kY) {
-            int l = ofClamp(x/kX, 0, cols - 1);
-            int p = ofClamp(y/kY, 0, rows - 1);
-            int depth = img[x+y*kW];
-            if (depth < upperLimit) {
-                lines[l][p].z = ofMap(depth, 0, 9757, -50, 500);
-            }
+    
+    if (kinect.isFrameNew()) {
+        mesh.update();
+        blobHandler(true); 
+        for (int i = 0; i < blobs.size(); i++) {
+            blobs[i].updateMotion();
         }
     }
-   // unsigned char * img = video.getPixels();
-   /* if (video.isFrameNew()) {
-        for (int y = 0 ; y < vH; y++) {
-            for (int x = 0 ; x < vW; x++) {
-                int mapX = ofMap(x, 0, vW, 0, ofGetWindowWidth());
-                int mapY = ofMap(y, 0, vH, 0, ofGetWindowHeight());
-                if (mapX % scale == 0 && mapY % scale == 0) {
-                    unsigned char r = img[x*3+y*vW*3];
-                    unsigned char g = img[x*3+y*vW*3+1];
-                    unsigned char b = img[x*3+y*vW*3+2];
-                    unsigned char brightness = (r+b+g)/3;
-                    lines[mapX/scale][mapY/scale].z = brightness;//.getVertices();
-                    //points[y/scale].x = brightness;
-                }
-            }
-        }
-    }
-    */
+    
+    
+
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
     ofBackground(0,0,0);
-    k->draw();
-    //video.draw(0,0);
+    mesh.draw();
+    for (int i = 0; i < blobs.size(); i++) blobs[i].draw();
     
-/*    ofSetColor(255, 0, 0);
-    for (int i = 0; i < lines.size(); i++ ) {
-        lines[i].draw();
-    }*/
 }
+
+void testApp::exit() {
+    
+    kinect.close();
+}
+
+void testApp::blobHandler(bool bThreshWithOpenCV = false) {
+    grayImage.setFromPixels(kinect.getDepthPixels(), kinect.width, kinect.height);
+    
+    
+    if(bThreshWithOpenCV) {
+        grayThreshNear = grayImage;
+        grayThreshFar = grayImage;
+        grayThreshNear.threshold(nearThreshold, true);
+        grayThreshFar.threshold(farThreshold);
+        cvAnd(grayThreshNear.getCvImage(), grayThreshFar.getCvImage(), grayImage.getCvImage(), NULL);
+    } else {
+        unsigned char * pix = grayImage.getPixels();
+        
+        int numPixels = grayImage.getWidth() * grayImage.getHeight();
+        for(int i = 0; i < numPixels; i++) {
+            if(pix[i] < nearThreshold && pix[i] > farThreshold) {
+                pix[i] = 255;
+            } else {
+                pix[i] = 0;
+            }
+        }
+    }
+    
+    grayImage.flagImageChanged();
+    
+
+    contourFinder.findContours(grayImage, 100, (kinect.width*kinect.height)/2, 20, false);
+    
+    //scenario 1 - no blobs: make a blob for each CV blob
+    
+    if(blobs.size() == 0){
+        cout<<"Scenario1"<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
+        
+        for(int i=0; i< contourFinder.blobs.size(); i++){        
+            
+            blobs.push_back(MyBlobs(blobCount, contourFinder.blobs[i], kinect.width, kinect.height));
+            blobCount++;
+            
+        }
+    }
+    
+    //scenario 2 - we have less blobs than CV blobs
+    
+    else if(blobs.size() <= contourFinder.blobs.size())
+    {
+        cout<<"Scenario2"<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
+        bool tracked[contourFinder.blobs.size()];
+        for (int i = 0; i< contourFinder.blobs.size(); i++) tracked[i] = false;
+        for(int i = 0; i<blobs.size(); i++)
+        {
+            float record = 50000;
+            int index = -1;
+            for(int j = 0; j < contourFinder.blobs.size(); j++)
+            {
+                float d = ofDist(contourFinder.blobs[j].centroid.x, contourFinder.blobs[j].centroid.y, blobs[i].cen.x, blobs[i].cen.y);
+                if(d < record && !tracked[j])
+                {
+                    record = d;
+                    index = j;
+                }
+            }
+            
+            tracked[index] = true;
+            blobs[i].update(contourFinder.blobs[index].centroid, contourFinder.blobs[index]);
+            
+        }
+        
+        for(int i=0; i < contourFinder.blobs.size(); i++)
+        {
+            if(!tracked[i])
+            {
+                blobs.push_back(MyBlobs(blobCount, contourFinder.blobs[i], kinect.width, kinect.height));
+                
+                blobCount++;
+                
+            }
+            
+        }
+        
+    }
+    
+    //Scenario 3: more myBlobs than cv blobs
+    else{
+        cout<<"Scenario3 Blobs: "<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
+        for(int i=0; i< blobs.size(); i++)
+        {
+            blobs[i].available = true;
+        }
+        
+        for(int i=0; i<contourFinder.blobs.size(); i++)
+        {
+            float record = 500000;
+            int index = -1;
+            for(int j = 0; j < blobs.size(); j++)
+            {
+                float d = ofDist(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, blobs[j].cen.x, blobs[j].cen.y);
+                if(d < record && blobs[j].available)
+                {
+                    record = d;
+                    index = j;
+                }
+            }
+            
+            blobs[index].available = false;
+            blobs[index].update(contourFinder.blobs[i].centroid, contourFinder.blobs[i]);
+            
+        }
+        
+    }
+    
+    for(int i = 0; i < blobs.size(); i++) {
+        if(blobs[i].blobDelete()) blobs.erase(blobs.begin() +i);
+    }
+}
+
+
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
@@ -116,7 +199,9 @@ void testApp::mouseReleased(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::windowResized(int w, int h){
-
+    for (int i = 0; i < blobs.size(); i++) {
+        blobs[i].resizeWindow(w, h);
+    }
 }
 
 //--------------------------------------------------------------

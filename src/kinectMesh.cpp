@@ -10,11 +10,14 @@
 #include "kinectMesh.h"
 
 kinectMesh::kinectMesh() {
-    
+}
+
+kinectMesh::kinectMesh(ofxKinect& k) {
+    kinect = &k;
     int numOfLines = 200;
-    
+
     scale = ofGetWindowWidth()/numOfLines;
-    
+
     for (int i = 0; i < ofGetWindowWidth(); i += scale) {
         vector<ofPoint> points;
         for (int j = 0; j < ofGetWindowHeight(); j += scale) {
@@ -26,28 +29,23 @@ kinectMesh::kinectMesh() {
     }
     rows = lines[0].getVertices().size();
     cols = lines.size();
-    
-    kW = kinect.getWidth();
-    kH = kinect.getHeight();
+
+    kW = kinect->getWidth();
+    kH = kinect->getHeight();
     kX = kW/cols;
     kY = kH/rows;
-    
+
     lwl = 0;
-    active = true;
+    active = false;
     tick = 0;
     upl = 9757;
 }
 
 kinectMesh::~kinectMesh() {
-    kinect.close();
-
 }
 
-void kinectMesh::setup() {
-    kinect.setRegistration(true);
-	kinect.init();
-	kinect.open();
-    
+void kinectMesh::setup( ofxKinect& k ) {    
+
 }
 
 void kinectMesh::draw() {
@@ -62,9 +60,8 @@ void kinectMesh::draw() {
 
 void kinectMesh::update() {
     if (active) {
-        kinect.update();
-    
-        img = kinect.getRawDepthPixels();
+            
+        img = kinect->getRawDepthPixels();
     
         for (int x = 0; x < kW; x += kX) {
             for (int y = 0; y < kH; y += kY) {
