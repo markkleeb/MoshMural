@@ -88,9 +88,10 @@ void MyBlobs::update(ofPoint centroid, ofxCvBlob & b) {
         points[i].y *= scalar;
     }
 
-    
+}
+
+void MyBlobs::updateMotion() {
     if (flocking) {
         flock.update(area, cen, points);
     }
-    
 }

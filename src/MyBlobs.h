@@ -27,6 +27,7 @@ public:
     ~MyBlobs();
     void draw();
     void update(ofPoint centroid, ofxCvBlob & b);
+    void updateMotion();
     void setup(ofColor c);
     void clear();
     void resizeWindow(int w, int h);    
