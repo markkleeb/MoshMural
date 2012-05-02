@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		410CDE0C154E2E34008D6C91 /* MyBlobs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 410CDE0A154E2E34008D6C91 /* MyBlobs.cpp */; };
 		4133C0EB154F2C0000440EBD /* Boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4133C0E9154F2BFF00440EBD /* Boid.cpp */; };
 		4133C0F7154F3D7700440EBD /* MyFlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4133C0F5154F3D7600440EBD /* MyFlock.cpp */; };
 		418A9B1A153C9C7600189868 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 418A9A4C153C9C7500189868 /* cameras.c */; };
@@ -26,6 +25,7 @@
 		418A9B28153C9C7600189868 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 418A9B02153C9C7600189868 /* ofxCvImage.cpp */; };
 		418A9B29153C9C7600189868 /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 418A9B05153C9C7600189868 /* ofxCvShortImage.cpp */; };
 		41BA37CB1550A192002385B4 /* ofxCvBlobTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41BA37C71550A192002385B4 /* ofxCvBlobTracker.cpp */; };
+		41EE465A1550DF06009755B8 /* BlobListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EE46581550DF06009755B8 /* BlobListener.cpp */; };
 		41F2EBB81541D5F200C52329 /* kinectMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41F2EBB61541D5F200C52329 /* kinectMesh.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
@@ -77,8 +77,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		410CDE0A154E2E34008D6C91 /* MyBlobs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyBlobs.cpp; sourceTree = "<group>"; };
-		410CDE0B154E2E34008D6C91 /* MyBlobs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBlobs.h; sourceTree = "<group>"; };
 		4133C0E9154F2BFF00440EBD /* Boid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Boid.cpp; sourceTree = "<group>"; };
 		4133C0EA154F2C0000440EBD /* Boid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
 		4133C0F5154F3D7600440EBD /* MyFlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyFlock.cpp; sourceTree = "<group>"; };
@@ -189,6 +187,8 @@
 		41BA37C81550A192002385B4 /* ofxCvBlobTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCvBlobTracker.h; sourceTree = "<group>"; };
 		41BA37C91550A192002385B4 /* ofxCvConstants_Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCvConstants_Track.h; sourceTree = "<group>"; };
 		41BA37CA1550A192002385B4 /* ofxCvTrackedBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCvTrackedBlob.h; sourceTree = "<group>"; };
+		41EE46581550DF06009755B8 /* BlobListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlobListener.cpp; sourceTree = "<group>"; };
+		41EE46591550DF06009755B8 /* BlobListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobListener.h; sourceTree = "<group>"; };
 		41F2EBB61541D5F200C52329 /* kinectMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kinectMesh.cpp; sourceTree = "<group>"; };
 		41F2EBB71541D5F200C52329 /* kinectMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kinectMesh.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -653,6 +653,8 @@
 			isa = PBXGroup;
 			children = (
 				41BA37C71550A192002385B4 /* ofxCvBlobTracker.cpp */,
+				41EE46581550DF06009755B8 /* BlobListener.cpp */,
+				41EE46591550DF06009755B8 /* BlobListener.h */,
 				41BA37C81550A192002385B4 /* ofxCvBlobTracker.h */,
 				41BA37C91550A192002385B4 /* ofxCvConstants_Track.h */,
 				41BA37CA1550A192002385B4 /* ofxCvTrackedBlob.h */,
@@ -661,8 +663,6 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				4133C0E9154F2BFF00440EBD /* Boid.cpp */,
 				4133C0EA154F2C0000440EBD /* Boid.h */,
-				410CDE0B154E2E34008D6C91 /* MyBlobs.h */,
-				410CDE0A154E2E34008D6C91 /* MyBlobs.cpp */,
 				41F2EBB61541D5F200C52329 /* kinectMesh.cpp */,
 				41F2EBB71541D5F200C52329 /* kinectMesh.h */,
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
@@ -783,10 +783,10 @@
 				418A9B28153C9C7600189868 /* ofxCvImage.cpp in Sources */,
 				418A9B29153C9C7600189868 /* ofxCvShortImage.cpp in Sources */,
 				41F2EBB81541D5F200C52329 /* kinectMesh.cpp in Sources */,
-				410CDE0C154E2E34008D6C91 /* MyBlobs.cpp in Sources */,
 				4133C0EB154F2C0000440EBD /* Boid.cpp in Sources */,
 				4133C0F7154F3D7700440EBD /* MyFlock.cpp in Sources */,
 				41BA37CB1550A192002385B4 /* ofxCvBlobTracker.cpp in Sources */,
+				41EE465A1550DF06009755B8 /* BlobListener.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

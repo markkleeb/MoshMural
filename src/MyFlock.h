@@ -16,18 +16,24 @@ class MyBlobs;
 
 class MyFlock {
     vector <Boid>       boids;
+    vector <ofPoint>    points;
+    ofPoint             cen;
     
 public:
-    MyFlock();
+    MyFlock(int blobID, ofColor clr, ofPoint center, const vector<ofPoint>& pts);
     ~MyFlock();
     
     void setup(ofPoint center, ofColor c);
     void draw();
-    void update(float area, ofPoint center, vector<ofPoint>& points);
-    bool inside(float x, float y, vector<ofPoint>& points);
+    void update();
+    void update(ofPoint center, const vector<ofPoint>& points);
+    bool inside(float x, float y, const vector<ofPoint>& points);
     
     ofPoint calculateBoidMotion(Boid & b);
     ofColor color;
+    
+    int bID;
+    bool    active;
     
 };
 

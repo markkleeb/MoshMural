@@ -17,9 +17,9 @@
 class ofxCvBlobListener {
   public:
 
-    virtual void blobOn( int x, int y, int id, int order ) = 0;
-    virtual void blobMoved( int x, int y, int id, int order ) = 0;
-    virtual void blobOff( int x, int y, int id, int order ) = 0;
+    virtual void blobOn( int x, int y, int id, const vector<ofPoint>& pts) = 0;//int order ) = 0;
+    virtual void blobMoved( int x, int y, int id, const vector<ofPoint>& pts) = 0;// int order ) = 0;
+    virtual void blobOff( int x, int y, int id, const vector<ofPoint>& pts) = 0;// int order ) = 0;
 
 };
 

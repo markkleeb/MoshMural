@@ -9,11 +9,13 @@
 #include <iostream>
 #include "MyFlock.h"
 
-MyFlock::MyFlock() {
+MyFlock::MyFlock(int blobID, ofColor clr, ofPoint center, const vector<ofPoint>& pts) {
+    points  = pts;
+    bID     = blobID;
+    color   = clr;
+    active  = true;
+    cen     = center;
     
-//    int boidCount = 200;
-//    for (int i = 0; i < boidCount; i++) boids.push_back(Boid()); 
-//    color = ofColor(255,255,255);
 }
 
 MyFlock::~MyFlock() {
@@ -37,14 +39,13 @@ void MyFlock::draw() {
     
 }
 
-void MyFlock::update(float area, ofPoint center, vector<ofPoint>& points) {
-    
+void MyFlock::update() {
     if ( boids.size() < BOIDCOUNT ) {
         for (int i = 0; i < ofRandom(10); i++) {
-            boids.push_back(Boid(center));
+            boids.push_back(Boid(cen));
         }
     }
-
+    cout << "FID:" << bID << " pts:"<< points.size() << endl;
     for (int i = 0; i < boids.size(); i++) {
         boids[i].update();
         ofPoint predictLoc = boids[i].loc + boids[i].vel*10;  
@@ -53,14 +54,23 @@ void MyFlock::update(float area, ofPoint center, vector<ofPoint>& points) {
             boids[i].acc += calculateBoidMotion(boids[i]);
         } else {
             boids[i].maxspeed = 10;
-            boids[i].force = center - predictLoc;
+            boids[i].force = cen - predictLoc;
             boids[i].acc += boids[i].force.normalize()* 2.5f;
         }
         
     }
+    
 }
 
-bool MyFlock::inside(float x, float y, vector<ofPoint> & points){
+void MyFlock::update(ofPoint center, const vector<ofPoint>& pts) {
+    points.clear();
+    points  = pts;
+    cen     = center;
+    update();
+
+}
+
+bool MyFlock::inside(float x, float y, const vector<ofPoint> & points){
 	int counter = 0;
 	int i;
 	double xinters;

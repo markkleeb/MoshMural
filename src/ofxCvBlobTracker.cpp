@@ -9,7 +9,7 @@ ofxCvBlobTracker::ofxCvBlobTracker() {
 	extraIDs = 0;
 	reject_distance_threshold = 150;
 	minimumDisplacementThreshold = 2.0f;
-	ghost_frames = 2;
+	ghost_frames = 10;
 }
 
 
@@ -90,7 +90,7 @@ void ofxCvBlobTracker::draw( float x, float y ) {
 */
 void ofxCvBlobTracker::trackBlobs( const vector<ofxCvBlob>& _blobs ) {
 	unsigned int i, j, k;
-
+    
     // Push to history, clear
 	history.push_back( blobs );
 	if( history.size() > 4 ) {
@@ -278,7 +278,9 @@ void ofxCvBlobTracker::trackBlobs( const vector<ofxCvBlob>& _blobs ) {
 				//doUpdateEvent( blobs[i].getTouchData() );
                 doBlobMoved( blobs[i] );
 				blobs[i].deltaLocTotal = ofPoint( 0.0f, 0.0f );
-			}
+			}// else {
+             //   doBlobUpdate( blobs[i] );
+            //}
 		}
 	}
 
@@ -326,26 +328,32 @@ void ofxCvBlobTracker::trackBlobs( const vector<ofxCvBlob>& _blobs ) {
 //
 void ofxCvBlobTracker::doBlobOn( const ofxCvTrackedBlob& b ) {
     if( listener != NULL ) {
-        listener->blobOn( b.centroid.x, b.centroid.y, b.id, findOrder(b.id) );
+        listener->blobOn( b.centroid.x, b.centroid.y, b.id, b.pts );
     } else {
         cout << "doBlobOn() event for blob: " << b.id << endl;
     }
 }
 void ofxCvBlobTracker::doBlobMoved( const ofxCvTrackedBlob& b ) {
     if( listener != NULL ) {
-        listener->blobMoved( b.centroid.x, b.centroid.y, b.id, findOrder(b.id) );
+        listener->blobMoved( b.centroid.x, b.centroid.y, b.id, b.pts );
     } else {
         cout << "doBlobMoved() event for blob: " << b.id << endl;
     }
 }
 void ofxCvBlobTracker::doBlobOff( const ofxCvTrackedBlob& b ) {
     if( listener != NULL ) {
-        listener->blobOff( b.centroid.x, b.centroid.y, b.id, findOrder(b.id) );
+        listener->blobOff( b.centroid.x, b.centroid.y, b.id, b.pts );
     } else {
         cout << "doBlobOff() event for blob: " << b.id << endl;
     }
 }
-
+void ofxCvBlobTracker::doBlobUpdate( const ofxCvTrackedBlob& b ) {
+//    if( listener != NULL ) {
+//        listener->blobOff( b.centroid.x, b.centroid.y, b.id, b.pts );
+//    } else {
+//        cout << "doBlobOff() event for blob: " << b.id << endl;
+//    }
+}
 
 
 

@@ -67,6 +67,7 @@ class ofxCvBlobTracker {
     void doBlobOn( const ofxCvTrackedBlob& b );
     void doBlobMoved( const ofxCvTrackedBlob& b );
     void doBlobOff( const ofxCvTrackedBlob& b );
+    void doBlobUpdate( const ofxCvTrackedBlob& b );
 
     inline void permute( int k );
     inline bool checkValid( int start );

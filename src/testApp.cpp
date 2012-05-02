@@ -2,6 +2,8 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
+    listener    = new BlobListener();
+    img         = NULL;
     kinect.setRegistration(true);
     
 	kinect.init();
@@ -21,6 +23,8 @@ void testApp::setup(){
     meshing     = false;
     cracking    = false;
     flocking    = false;
+    
+    tracker.setListener(listener);
 
 }
 
@@ -30,29 +34,47 @@ void testApp::update(){
     
     if (kinect.isFrameNew()) {
         mesh.update();
-        blobHandler(true); 
-//        for (int i = 0; i < blobs.size(); i++) {
-//            blobs[i].updateMotion();
-//        }
+        blobHandler(true);
+        img = &kinect.getTextureReference();
     }
-    
-    
+//    flockHandler(flocking);
+    listener->update();
 
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
     
+    if (img != NULL) img->draw(0, 0);
     ofBackground(0,0,0);
     mesh.draw();
     tracker.draw(0,0);
-//    for (int i = 0; i < tracker.bsize(); i++) tracker[i].draw();
+    listener->draw();
+    
     
 }
 
 void testApp::exit() {
     
     kinect.close();
+}
+
+void testApp::flockHandler(bool bflock) {
+    if (!bflock) {
+        for (int i=0; i<flocks.size(); i++) {
+            flocks[i]->~MyFlock();
+            flocks.erase(flocks.begin()+i);
+        }
+        return;
+    } else {
+        int blobSize = tracker.blobs.size();
+        int flockSize = flocks.size();
+        for (int i = 0; i< tracker.blobs.size(); i++) {
+            
+        }
+    }return;
+    
+    
 }
 
 void testApp::blobHandler(bool bThreshWithOpenCV = false) {
@@ -82,110 +104,40 @@ void testApp::blobHandler(bool bThreshWithOpenCV = false) {
     
 
     contourFinder.findContours(grayImage, 100, (kinect.width*kinect.height)/2, 20, false);
-    
+    scalePoints(contourFinder);
     tracker.trackBlobs( contourFinder.blobs );
     
     
-    
-    //scenario 1 - no blobs: make a blob for each CV blob
-    /*
-    if(blobs.size() == 0){
-        cout<<"Scenario1"<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
-        
-        for(int i=0; i< contourFinder.blobs.size(); i++){        
-            
-            blobs.push_back(MyBlobs(blobCount, contourFinder.blobs[i], kinect.width, kinect.height));
-            blobCount++;
-            
-        }
-    }
-    
-    //scenario 2 - we have less blobs than CV blobs
-    
-    else if(blobs.size() <= contourFinder.blobs.size())
-    {
-        cout<<"Scenario2 Blobs: "<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
-        bool tracked[contourFinder.blobs.size()];
-        for (int i = 0; i< contourFinder.blobs.size(); i++) tracked[i] = false;
-        for(int i = 0; i<blobs.size(); i++)
-        {
-            float record = 50000;
-            int index = -1;
-            for(int j = 0; j < contourFinder.blobs.size(); j++)
-            {
-                float d = ofDist(contourFinder.blobs[j].centroid.x, contourFinder.blobs[j].centroid.y, blobs[i].cen.x, blobs[i].cen.y);
-                if(d < record && !tracked[j])
-                {
-                    record = d;
-                    index = j;
-                }
-            }
-            
-            tracked[index] = true;
-            blobs[i].update(contourFinder.blobs[index].centroid, contourFinder.blobs[index]);
-            
-        }
-        
-        for(int i=0; i < contourFinder.blobs.size(); i++)
-        {
-            if(!tracked[i])
-            {
-                blobs.push_back(MyBlobs(blobCount, contourFinder.blobs[i], kinect.width, kinect.height));
-                
-                blobCount++;
-                
-            }
-            
-        }
-        
-    }
-    
-    //Scenario 3: more myBlobs than cv blobs
-    else{
-        cout<<"Scenario3 Blobs: "<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
-        for(int i=0; i< blobs.size(); i++)
-        {
-            blobs[i].available = true;
-        }
-        
-        for(int i=0; i<contourFinder.blobs.size(); i++)
-        {
-            float record = 500000;
-            int index = -1;
-            for(int j = 0; j < blobs.size(); j++)
-            {
-                float d = ofDist(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, blobs[j].cen.x, blobs[j].cen.y);
-                if(d < record && blobs[j].available)
-                {
-                    record = d;
-                    index = j;
-                }
-            }
-            
-            blobs[index].available = false;
-            blobs[index].update(contourFinder.blobs[i].centroid, contourFinder.blobs[i]);
-            
-        }
-        
-    }
-    
-    for(int i = 0; i < blobs.size(); i++) {
-        if(blobs[i].blobDelete()) {
-            cout<<"Blob deleted : "<<i<<endl;
-            blobs.erase(blobs.begin() +i);
-        }
-    }*/
 }
 
-
+void testApp::scalePoints(ofxCvContourFinder& cf) {
+    float wScale = 1.6f;
+    float hScale = 1.6f;
+    for (int i = 0; i < cf.blobs.size(); i++) {
+        for (int j = 0; j < cf.blobs[i].pts.size(); j++) {
+            cf.blobs[i].pts[j].x *= wScale;
+            cf.blobs[i].pts[j].y *= hScale;
+        }
+    }
+}
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
     if (key == 'f') {
         flocking = !flocking;
-//        for (int i = 0; i<blobs.size(); i++) {
-//            blobs[i].toggleFlocking(flocking);
-//        }
+        flockHandler(flocking);
+    } else if (key == 'c') {
+        cracking = !cracking;
+    } else if (key == 'm') {
+        meshing = !meshing;
+    } else if (key == '-') {
+        nearThreshold --;
+    } else if (key == '=') {
+        nearThreshold ++;
+    } else if (key == '[') {
+        farThreshold --;
+    } else if (key == ']') {
+        farThreshold ++;
     }
 
 }
