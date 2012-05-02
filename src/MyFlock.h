@@ -24,7 +24,7 @@ public:
     ~MyFlock();
     
     void setup(ofPoint center, ofColor c);
-    void draw();
+    void draw(int magnitute = 0, int frequency = 0);
     void update();
     void update(ofPoint center, const vector<ofPoint>& points);
     bool inside(float x, float y, const vector<ofPoint>& points);

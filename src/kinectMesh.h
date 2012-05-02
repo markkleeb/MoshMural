@@ -19,8 +19,8 @@ public:
     kinectMesh(ofxKinect& k);
     ~kinectMesh();
     void                setup( ofxKinect& k );
-    void                update();
-    void                draw();
+    void                update(int lineType = 0);
+    void                draw(int magnitute = 0, int frequency = 0);
     
     void                raiseLower();
     void                lowerLower();

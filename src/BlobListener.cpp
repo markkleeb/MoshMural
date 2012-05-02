@@ -41,10 +41,10 @@ void BlobListener::blobOff(int x, int y, int id, const vector<ofPoint>& pts) {//
     cout<<"blob off"<<endl;
 }
 
-void BlobListener::draw() {
+void BlobListener::draw(int magnitute, int frequency) {
     for (int i = 0; i < f.size(); i++) {
         if (f[i] != NULL) {
-            f[i]->draw();
+            f[i]->draw(magnitute, frequency);
         }
     }
 }

@@ -9,8 +9,27 @@
 #include "MyFlock.h"
 #include "ofxCvBlobTracker.h"
 #include "BlobListener.h"
+#include "fft.h"
+
+#define BUFFER_SIZE 256
+#define NUM_WINDOWS 80
 
 class testApp : public ofBaseApp{
+    float * left;
+    float * right;
+    int 	bufferCounter;
+    fft		myfft;
+    
+    int     max, frq;
+    int     absMax;
+    ofSoundStream stream;
+    
+    float magnitude[BUFFER_SIZE];
+    float phase[BUFFER_SIZE];
+    float power[BUFFER_SIZE];
+    
+    float freq[NUM_WINDOWS][BUFFER_SIZE/2];
+    float freq_phase[NUM_WINDOWS][BUFFER_SIZE/2];
 
 public:
     void setup();
@@ -28,9 +47,10 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
+    void audioReceived(float * input, int bufferSize, int nChannels);
     
-    void scalePoints(ofxCvContourFinder& cf);
-    void flockHandler(bool bflock);
+    void fftUpdate();
+    void scalePoints(ofxCvContourFinder& cf, float wScale = 1.6f, float hScale = 1.6f, int vAdjust = 0, int hAdjust = 0);
     void blobHandler(bool thresh);
     
     ofxKinect               kinect;
@@ -58,6 +78,10 @@ public:
     bool                    debug,
                             flocking,
                             cracking,
-                            meshing;
+                            meshing,
+                            drawImage,
+                            volume,
+                            frequency,
+                            streaming;
 		
 };

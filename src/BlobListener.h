@@ -13,6 +13,7 @@
 
 class BlobListener : public ofxCvBlobListener  {
     vector<MyFlock*> f;
+    int max, frq;
     
 public:
     BlobListener();//MyFlock& flock);
@@ -22,7 +23,7 @@ public:
     void blobMoved( int x, int y, int id, const vector<ofPoint>& pts);// int order );
     void blobOff( int x, int y, int id, const vector<ofPoint>& pts);// int order );
         
-    void draw();
+    void draw(int magnitute = 0, int frequency = 0);
     void update();
 };
 

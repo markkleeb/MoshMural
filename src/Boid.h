@@ -26,7 +26,7 @@ public:
 
 	
 	void update();
-	void draw(ofColor color);
+	void draw(ofColor color, float magnitude = 0.0f);
     void seek(ofPoint target);
     void arrive(ofPoint target);
     void accel(ofPoint vec);

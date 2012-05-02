@@ -30,13 +30,14 @@ void MyFlock::setup(ofPoint center, ofColor c) {
 
 }
 
-void MyFlock::draw() {
+void MyFlock::draw(int magnitude, int frequency) {
 //    cout<<" B: "<<boids.size();
+    float mag = ofMap(magnitude, 0, 100, 0, 2.5f);
     for (int i = 0; i < boids.size() ; i++) {
-        boids[i].draw(color);
+        if (magnitude != 0) boids[i].draw(color, mag);
+        else boids[i].draw(color);
 
     }
-    
 }
 
 void MyFlock::update() {
@@ -45,7 +46,7 @@ void MyFlock::update() {
             boids.push_back(Boid(cen));
         }
     }
-    cout << "FID:" << bID << " pts:"<< points.size() << endl;
+//    cout << "FID:" << bID << " pts:"<< points.size() << endl;
     for (int i = 0; i < boids.size(); i++) {
         boids[i].update();
         ofPoint predictLoc = boids[i].loc + boids[i].vel*10;  
@@ -62,7 +63,10 @@ void MyFlock::update() {
     
 }
 
+
 void MyFlock::update(ofPoint center, const vector<ofPoint>& pts) {
+    
+    
     points.clear();
     points  = pts;
     cen     = center;

@@ -71,9 +71,8 @@ void Boid::setup(ofPoint cen) {
     
     
 }
-void Boid::draw(ofColor color) {
-    
-    float r = 2.5f;
+void Boid::draw(ofColor color, float magnitude) {
+    float r = 2.5f + magnitude;
 
     float angle = (float)atan2(-vel.y, vel.x);
     float theta =  -1.0*angle;

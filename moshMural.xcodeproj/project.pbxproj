@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4133C0EB154F2C0000440EBD /* Boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4133C0E9154F2BFF00440EBD /* Boid.cpp */; };
 		4133C0F7154F3D7700440EBD /* MyFlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4133C0F5154F3D7600440EBD /* MyFlock.cpp */; };
+		4189CBB31551ABC600D921F9 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4189CBB11551ABC600D921F9 /* fft.cpp */; };
 		418A9B1A153C9C7600189868 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 418A9A4C153C9C7500189868 /* cameras.c */; };
 		418A9B1B153C9C7600189868 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 418A9A4F153C9C7500189868 /* core.c */; };
 		418A9B1D153C9C7600189868 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 418A9A59153C9C7600189868 /* registration.c */; };
@@ -81,6 +82,8 @@
 		4133C0EA154F2C0000440EBD /* Boid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
 		4133C0F5154F3D7600440EBD /* MyFlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyFlock.cpp; sourceTree = "<group>"; };
 		4133C0F6154F3D7600440EBD /* MyFlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlock.h; sourceTree = "<group>"; };
+		4189CBB11551ABC600D921F9 /* fft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fft.cpp; sourceTree = "<group>"; };
+		4189CBB21551ABC600D921F9 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
 		418A9A4C153C9C7500189868 /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cameras.c; sourceTree = "<group>"; };
 		418A9A4D153C9C7500189868 /* cameras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameras.h; sourceTree = "<group>"; };
 		418A9A4F153C9C7500189868 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
@@ -652,6 +655,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				4189CBB11551ABC600D921F9 /* fft.cpp */,
+				4189CBB21551ABC600D921F9 /* fft.h */,
 				41BA37C71550A192002385B4 /* ofxCvBlobTracker.cpp */,
 				41EE46581550DF06009755B8 /* BlobListener.cpp */,
 				41EE46591550DF06009755B8 /* BlobListener.h */,
@@ -787,6 +792,7 @@
 				4133C0F7154F3D7700440EBD /* MyFlock.cpp in Sources */,
 				41BA37CB1550A192002385B4 /* ofxCvBlobTracker.cpp in Sources */,
 				41EE465A1550DF06009755B8 /* BlobListener.cpp in Sources */,
+				4189CBB31551ABC600D921F9 /* fft.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
