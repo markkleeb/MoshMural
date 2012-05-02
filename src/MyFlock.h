@@ -10,7 +10,7 @@
 #define moshMural_MyFlock_cpp
 #include "Boid.h"
 
-#define BOIDCOUNT 200
+#define BOIDCOUNT 600
 
 class MyBlobs;
 

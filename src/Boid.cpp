@@ -26,6 +26,22 @@ Boid::Boid() {
     
 }
 
+Boid::Boid(ofPoint center) {
+    
+    loc.x = ofRandom(center.x-10, center.x+10);
+	loc.y = ofRandom(center.y-10, center.y+10);   
+    
+	acc = 0;
+    
+    maxspeed = 2;
+    maxforce = 0.1;
+    vel = 0;
+    //    r   = 2.5f;
+    
+    
+    
+}
+
 
 // Method to update location
 void Boid::update() {
@@ -58,11 +74,11 @@ void Boid::setup(ofPoint cen) {
 void Boid::draw(ofColor color) {
     
     float r = 2.5f;
-    	
-	float angle = (float)atan2(-vel.y, vel.x);
+
+    float angle = (float)atan2(-vel.y, vel.x);
     float theta =  -1.0*angle;
 	float heading2D = ofRadToDeg(theta)+90;
-	
+
 	ofEnableAlphaBlending();
     ofSetColor(color);
     ofFill();
@@ -103,7 +119,19 @@ void Boid::draw(ofColor color) {
 }
 
 
-
+ofPoint Boid::vecSteer(ofPoint vec) {
+    float mag = sqrt(vec.x*vec.x + vec.y*vec.y);
+    if (mag > 0) {
+		// Implement Reynolds: Steering = Desired - Velocity
+		vec /= mag;
+		vec *= maxspeed;
+		vec -= vel;
+		vec.x = ofClamp(vec.x, -maxforce, maxforce);
+		vec.y = ofClamp(vec.y, -maxforce, maxforce);
+    }
+    return vec;
+    
+}
 ofPoint Boid::steer(ofPoint target, bool slowdown) {
     ofPoint steer;                      // The steering vector
     ofPoint desired = target - loc;     // A vector pointing from the location to the target

@@ -8,6 +8,7 @@
 #include "ofxCvContourFinder.h"
 #include "ofxCvColorImage.h"
 #include "MyFlock.h"
+#include "ofxCvBlobTracker.h"
 
 class testApp : public ofBaseApp{
 
@@ -31,7 +32,8 @@ public:
     
     ofxKinect               kinect;
     kinectMesh              mesh;
-    vector<MyBlobs>         blobs;
+    ofxCvBlobTracker        tracker;
+    //vector<MyBlobs>         blobs;
     
     
     int             nearThreshold, farThreshold, blobCount;
@@ -39,6 +41,9 @@ public:
     ofxCvGrayscaleImage grayImage,grayThreshNear,grayThreshFar;
     ofxCvContourFinder contourFinder;
     
-    bool                    debug;
+    bool                    debug,
+                            flocking,
+                            cracking,
+                            meshing;
 		
 };

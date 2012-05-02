@@ -41,22 +41,22 @@ void MyFlock::update(float area, ofPoint center, vector<ofPoint>& points) {
     
     if ( boids.size() < BOIDCOUNT ) {
         for (int i = 0; i < ofRandom(10); i++) {
-            boids.push_back(Boid());
-            boids[i].setup(center);
+            boids.push_back(Boid(center));
         }
     }
 
     for (int i = 0; i < boids.size(); i++) {
+        boids[i].update();
         ofPoint predictLoc = boids[i].loc + boids[i].vel*10;  
         if (inside(predictLoc.x, predictLoc.y, points)) {
             boids[i].maxspeed   = 5;
-            boids[i].accel(calculateBoidMotion(boids[i]));
+            boids[i].acc += calculateBoidMotion(boids[i]);
         } else {
             boids[i].maxspeed = 10;
             boids[i].force = center - predictLoc;
-            boids[i].acc += boids[i].force.normalize()* 2.5;
+            boids[i].acc += boids[i].force.normalize()* 2.5f;
         }
-        boids[i].update();
+        
     }
 }
 
@@ -135,8 +135,8 @@ ofPoint MyFlock::calculateBoidMotion(Boid & b) {
 		cohSteer /= (float)cCount;
     }
 	
-    sepSteer = b.steer(sepSteer, false);
-    aliSteer = b.steer(aliSteer, false);
+    sepSteer = b.vecSteer(sepSteer);
+    aliSteer = b.vecSteer(aliSteer);
     cohSteer = b.steer(cohSteer, false);
     
     sepSteer *= 10.0;

@@ -17,7 +17,8 @@
 
 class MyBlobs {
     
-    MyFlock             flock;
+    MyFlock  *          m_pFlock;
+//    MyFlock             m_custflock;
     vector<ofPoint>     points;
 
     
@@ -31,7 +32,8 @@ public:
     void setup(ofColor c);
     void clear();
     void resizeWindow(int w, int h);    
-
+    void toggleFlocking(bool bFlocking);
+    
     bool blobDelete();
     
     ofPoint             cen; 

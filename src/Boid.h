@@ -22,6 +22,8 @@ class Boid {
 
 public:
 	Boid();
+	Boid(ofPoint center);
+
 	
 	void update();
 	void draw(ofColor color);
@@ -43,7 +45,7 @@ public:
 	float maxforce;
 	float maxspeed;
 
-    
+    ofPoint vecSteer(ofPoint vec);
     ofPoint steer(ofPoint target, bool slowdown);
     
     

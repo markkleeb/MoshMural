@@ -10,30 +10,27 @@
 #include "MyBlobs.h"
 
 MyBlobs::MyBlobs(int blobCount, ofxCvBlob & b, int w, int h) {
-    scalar = 1.6f;
+    scalar      = 1.6f;
+    m_pFlock    = NULL;
+    cen         = b.centroid*ofPoint(scalar, scalar);
+    area        = b.area;
+    blobID      = blobCount;
+    available   = false;
+    count       = 50;
+    flocking    = true;
+    debug       = true;
+    cracking    = false;
     
-    cen     = b.centroid*ofPoint(scalar, scalar);
-    area    = b.area;
-    blobID  = blobCount;
-    available  = false;
-    count   = 50;
-    flocking   = true;
-    debug      = true;
-    cracking   = false;
+    clr         = ofColor(ofRandom(255),ofRandom(255),ofRandom(255));
     
-    clr        = ofColor(ofRandom(255),ofRandom(255),ofRandom(255));
+    points      = b.pts;
     
-    points     = b.pts;
     for (int i = 0; i < points.size(); i++) {
         points[i].x *= scalar;
         points[i].y *= scalar;
     }
-    setup(clr);
-    
-    
-
-    
 }
+
 MyBlobs::~MyBlobs(){}
 
 void MyBlobs::draw() {
@@ -52,15 +49,15 @@ void MyBlobs::draw() {
         ofEndShape(true);
         
     }
-    if (flocking) {
-        cout<<"FID: "<<blobID;
-        flock.draw();
-        cout<<endl;
+    if (m_pFlock != NULL) {
+        m_pFlock->draw();
     }
 }
 
-void MyBlobs::setup(ofColor clr) {
-    flock.setup(cen, clr);    
+void MyBlobs::setup(ofColor color) {
+    if (m_pFlock != NULL) {
+        m_pFlock->setup(cen, clr);
+    }
 }
 
 void MyBlobs::resizeWindow(int w, int h){
@@ -88,10 +85,26 @@ void MyBlobs::update(ofPoint centroid, ofxCvBlob & b) {
         points[i].y *= scalar;
     }
 
+    
+
+}
+
+void MyBlobs::toggleFlocking(bool bFlocking) {
+    if (bFlocking) {
+        if (m_pFlock == NULL) {
+            m_pFlock = new MyFlock();
+            setup(clr);
+        }
+    } else {
+        if (m_pFlock != NULL) {
+            m_pFlock->~MyFlock();
+            m_pFlock = NULL;
+        }
+    }
 }
 
 void MyBlobs::updateMotion() {
-    if (flocking) {
-        flock.update(area, cen, points);
+    if (m_pFlock != NULL) {
+        m_pFlock->update(area, cen, points);
     }
 }

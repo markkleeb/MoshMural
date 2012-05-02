@@ -16,7 +16,11 @@ void testApp::setup(){
     grayImage.allocate(kinect.width, kinect.height);
 	grayThreshNear.allocate(kinect.width, kinect.height);
 	grayThreshFar.allocate(kinect.width, kinect.height);
-    ofSetFrameRate(5);
+    ofSetFrameRate(60);
+    
+    meshing     = false;
+    cracking    = false;
+    flocking    = false;
 
 }
 
@@ -27,9 +31,9 @@ void testApp::update(){
     if (kinect.isFrameNew()) {
         mesh.update();
         blobHandler(true); 
-        for (int i = 0; i < blobs.size(); i++) {
-            blobs[i].updateMotion();
-        }
+//        for (int i = 0; i < blobs.size(); i++) {
+//            blobs[i].updateMotion();
+//        }
     }
     
     
@@ -41,7 +45,8 @@ void testApp::draw(){
     
     ofBackground(0,0,0);
     mesh.draw();
-    for (int i = 0; i < blobs.size(); i++) blobs[i].draw();
+    tracker.draw(0,0);
+//    for (int i = 0; i < tracker.bsize(); i++) tracker[i].draw();
     
 }
 
@@ -78,8 +83,12 @@ void testApp::blobHandler(bool bThreshWithOpenCV = false) {
 
     contourFinder.findContours(grayImage, 100, (kinect.width*kinect.height)/2, 20, false);
     
-    //scenario 1 - no blobs: make a blob for each CV blob
+    tracker.trackBlobs( contourFinder.blobs );
     
+    
+    
+    //scenario 1 - no blobs: make a blob for each CV blob
+    /*
     if(blobs.size() == 0){
         cout<<"Scenario1"<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
         
@@ -95,7 +104,7 @@ void testApp::blobHandler(bool bThreshWithOpenCV = false) {
     
     else if(blobs.size() <= contourFinder.blobs.size())
     {
-        cout<<"Scenario2"<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
+        cout<<"Scenario2 Blobs: "<<blobs.size()<<" CV Blobs: "<<contourFinder.blobs.size()<<endl;
         bool tracked[contourFinder.blobs.size()];
         for (int i = 0; i< contourFinder.blobs.size(); i++) tracked[i] = false;
         for(int i = 0; i<blobs.size(); i++)
@@ -161,14 +170,23 @@ void testApp::blobHandler(bool bThreshWithOpenCV = false) {
     }
     
     for(int i = 0; i < blobs.size(); i++) {
-        if(blobs[i].blobDelete()) blobs.erase(blobs.begin() +i);
-    }
+        if(blobs[i].blobDelete()) {
+            cout<<"Blob deleted : "<<i<<endl;
+            blobs.erase(blobs.begin() +i);
+        }
+    }*/
 }
 
 
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    if (key == 'f') {
+        flocking = !flocking;
+//        for (int i = 0; i<blobs.size(); i++) {
+//            blobs[i].toggleFlocking(flocking);
+//        }
+    }
 
 }
 
@@ -199,9 +217,9 @@ void testApp::mouseReleased(int x, int y, int button){
 
 //--------------------------------------------------------------
 void testApp::windowResized(int w, int h){
-    for (int i = 0; i < blobs.size(); i++) {
-        blobs[i].resizeWindow(w, h);
-    }
+//    for (int i = 0; i < blobs.size(); i++) {
+//        blobs[i].resizeWindow(w, h);
+//    }
 }
 
 //--------------------------------------------------------------
