@@ -54,8 +54,8 @@ void Boid::update() {
     
     loc += vel;
     
-    if(loc.x <= 0 || loc.x >= ofGetWindowWidth()) vel.x *= -1;
-    if(loc.y <= 0 || loc.y >= ofGetWindowHeight()) vel.y *= -1;
+   // if(loc.x <= 0 || loc.x >= ofGetWindowWidth()) vel.x *= -1;
+   // if(loc.y <= 0 || loc.y >= ofGetWindowHeight()) vel.y *= -1;
     
     loc.x = ofClamp(loc.x, 0, ofGetWindowWidth());
     loc.y = ofClamp(loc.y, 0, ofGetWindowHeight());

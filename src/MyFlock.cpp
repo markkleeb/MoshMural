@@ -26,17 +26,30 @@ void MyFlock::setup(ofPoint center, ofColor c) {
     color = c;
     
     for (int i = 0; i < boids.size(); i++) boids[i].setup(center);
-//    cout<<"fsetup: "<<center.x<<" , "<<center.y<<endl;
-
+    //    cout<<"fsetup: "<<center.x<<" , "<<center.y<<endl;
+    
 }
 
 void MyFlock::draw(int magnitude, int frequency) {
-//    cout<<" B: "<<boids.size();
-    float mag = ofMap(magnitude, 0, 100, 0, 2.5f);
+    ofEnableSmoothing();
+    ofSetLineWidth(10);
+    ofSetColor(color);
+    ofNoFill();
+    ofBeginShape();
+    
+    for(int i = 0; i < points.size(); i++)
+    {
+        ofVertex(points[i].x, points[i].y);
+    }
+    
+    ofEndShape();
+    
+    //    cout<<" B: "<<boids.size();
+    float mag = ofMap(magnitude, 0, 100, 0, 10.0f);
     for (int i = 0; i < boids.size() ; i++) {
         if (magnitude != 0) boids[i].draw(color, mag);
         else boids[i].draw(color);
-
+        
     }
 }
 
@@ -46,7 +59,7 @@ void MyFlock::update() {
             boids.push_back(Boid(cen));
         }
     }
-//    cout << "FID:" << bID << " pts:"<< points.size() << endl;
+    //    cout << "FID:" << bID << " pts:"<< points.size() << endl;
     for (int i = 0; i < boids.size(); i++) {
         boids[i].update();
         ofPoint predictLoc = boids[i].loc + boids[i].vel*10;  
@@ -71,7 +84,7 @@ void MyFlock::update(ofPoint center, const vector<ofPoint>& pts) {
     points  = pts;
     cen     = center;
     update();
-
+    
 }
 
 bool MyFlock::inside(float x, float y, const vector<ofPoint> & points){
@@ -109,10 +122,10 @@ ofPoint MyFlock::calculateBoidMotion(Boid & b) {
     float neighbordist = 50.0f;
     ofPoint cohSteer, aliSteer, sepSteer;
     int cCount = 0, aCount = 0, sCount = 0;
-	
+    
     // For every boid in the system, check if it's too close
     for (int i = 0 ; i < boids.size(); i++) {
-		
+        
 		float d = ofDist(b.loc.x, b.loc.y, boids[i].loc.x, boids[i].loc.y);
         
         // Separation
@@ -148,7 +161,7 @@ ofPoint MyFlock::calculateBoidMotion(Boid & b) {
     if (cCount > 0) {
 		cohSteer /= (float)cCount;
     }
-	
+    
     sepSteer = b.vecSteer(sepSteer);
     aliSteer = b.vecSteer(aliSteer);
     cohSteer = b.steer(cohSteer, false);
@@ -156,7 +169,7 @@ ofPoint MyFlock::calculateBoidMotion(Boid & b) {
     sepSteer *= 10.0;
 	aliSteer *= 1.0;
 	cohSteer *= 1.0;
-	
+    
 	return sepSteer + aliSteer + cohSteer;
-
+    
 }

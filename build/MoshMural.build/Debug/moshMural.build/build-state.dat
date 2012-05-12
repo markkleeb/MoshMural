@@ -5,29 +5,29 @@ cCheck dependencies
 cProcessInfoPlistFile /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/Info.plist openFrameworks-Info.plist
 cProcessPCH++ /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42
 cProcessPCH /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-ffocvtsnytuokqapugguiedtwffi/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxKinect.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/src/ofxKinect.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvShortImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvContourFinder.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/BlobListener.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/BlobListener.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/core.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/core.c normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/registration.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/registration.c normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/cameras.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/cameras.c normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/tilt.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/tilt.c normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/usb_libusb10.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/usb_libusb10.c normal i386 c com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvFloatImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvColorImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvGrayscaleImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvHaarFinder.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvHaarFinder.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/kinectMesh.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/kinectMesh.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp normal i386 c++ com.apple.compilers.llvmgcc42
-cCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/fft.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/fft.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/cameras.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/cameras.c normal i386 c com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/core.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/core.c normal i386 c com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/registration.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/registration.c normal i386 c com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/tilt.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/tilt.c normal i386 c com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/usb_libusb10.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/usb_libusb10.c normal i386 c com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxKinect.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/src/ofxKinect.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvContourFinder.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvColorImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvFloatImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvGrayscaleImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvHaarFinder.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvHaarFinder.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvShortImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/kinectMesh.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/kinectMesh.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/BlobListener.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/BlobListener.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+cCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/fft.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/fft.cpp normal i386 c++ com.apple.compilers.llvmgcc42
 cLd /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug normal i386
-cPhaseScriptExecution "Run Script" /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+cPhaseScriptExecution "Run Script" /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
 cPBXCp ../../../libs/glut/lib/osx/GLUT.framework bin/moshMuralDebug.app/Contents/Frameworks/GLUT.framework
 cTouch /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app
 
@@ -698,7 +698,7 @@ t1295145008
 s600728
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app
-t1336858862
+t1336861653
 s102
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/Frameworks/GLUT.framework
@@ -710,146 +710,240 @@ t1336858853
 s1001
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug
-t1336858862
-s7596608
+t1336861652
+s7596616
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/PkgInfo
 t1336858853
 s8
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/BlobListener.o
-t1336858861
+t1336861582
 s86168
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o
-t1336858860
+t1336861582
 s55636
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o
-t1336858860
+t1336861582
 s99472
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/cameras.o
-t1336858859
+t1336861582
 s51644
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/core.o
-t1336858859
+t1336861582
 s13368
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/fft.o
-t1336858860
+t1336861582
 s19432
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/kinectMesh.o
-t1336858861
+t1336861582
 s225652
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o
-t1336858855
+t1336861582
 s239692
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/moshMuralDebug.LinkFileList
-c000000004FAED8AA0000000000000AC7
-t1336858794
+c000000004FAEE38E0000000000000AC7
+t1336861582
 s2759
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o
-t1336858861
+t1336861582
 s289152
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvColorImage.o
-t1336858856
+t1336861582
 s117192
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvContourFinder.o
-t1336858857
+t1336861582
 s198068
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvFloatImage.o
-t1336858857
+t1336861582
 s125128
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvGrayscaleImage.o
-t1336858858
+t1336861582
 s113564
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvHaarFinder.o
-t1336858859
+t1336861582
 s248916
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvImage.o
-t1336858860
+t1336861582
 s150296
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvShortImage.o
-t1336858860
+t1336861582
 s115504
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxKinect.o
-t1336858854
+t1336861582
 s191324
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/registration.o
-t1336858859
+t1336861582
 s20360
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o
-t1336858855
-s354412
+t1336861582
+s354604
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/tilt.o
-t1336858859
+t1336861582
 s10760
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/usb_libusb10.o
-t1336858859
+t1336861582
 s18404
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
-c000000004FAED8AA0000000000000114
-t1336858794
+c000000004FAEE38E0000000000000114
+t1336861582
+s276
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/BlobListener.o
+t1336861582
+s86168
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o
+t1336861582
+s55636
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o
+t1336861582
+s99472
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/cameras.o
+t1336861582
+s51644
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/core.o
+t1336861582
+s13368
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/fft.o
+t1336861582
+s19432
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/kinectMesh.o
+t1336861582
+s225652
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o
+t1336861582
+s239692
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/moshMuralDebug.LinkFileList
+c000000004FAEE5640000000000000AC7
+t1336862052
+s2759
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o
+t1336861582
+s289152
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvColorImage.o
+t1336861582
+s117192
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvContourFinder.o
+t1336861582
+s198068
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvFloatImage.o
+t1336861582
+s125128
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvGrayscaleImage.o
+t1336861582
+s113564
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvHaarFinder.o
+t1336861582
+s248916
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvImage.o
+t1336861582
+s150296
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvShortImage.o
+t1336861582
+s115504
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxKinect.o
+t1336861582
+s191324
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/registration.o
+t1336861582
+s20360
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o
+t1336861582
+s354604
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/tilt.o
+t1336861582
+s10760
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/usb_libusb10.o
+t1336861582
+s18404
+
+N/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004FAEE38E0000000000000114
+t1336861582
 s276
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/BlobListener.cpp
-c000000004FAED8AA0000000000000557
-t1336858794
+c000000004FAEE38E0000000000000557
+t1336861582
 s1367
 i<iostream>
 i"BlobListener.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/BlobListener.h
-c000000004FAED8AA000000000000030E
-t1336858794
+c000000004FAEE38E000000000000030E
+t1336861582
 s782
 i"ofxCvConstants_Track.h"
 i"MyFlock.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp
-c000000004FAED8AA0000000000000EF8
-t1336858794
-s3832
+c000000004FAEE5020000000000000EFC
+t1336861954
+s3836
 i"Boid.h"
 i<iostream>
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.h
-c000000004FAED8AA0000000000000317
-t1336858794
+c000000004FAEE38E0000000000000317
+t1336861582
 s791
 i"ofMain.h"
 i<list>
 i"ofPolyline.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cpp
-c000000004FAED8AA0000000000000F08
-t1336858794
-s3848
+c000000004FAEE5020000000000001027
+t1336861954
+s4135
 i<iostream>
 i"MyFlock.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.h
-c000000004FAED8AA0000000000000350
-t1336858794
+c000000004FAEE38E0000000000000350
+t1336861582
 s848
 i"Boid.h"
 
@@ -868,37 +962,37 @@ t1336768676
 s464
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/kinectMesh.cpp
-c000000004FAED8AA0000000000000A6D
-t1336858794
+c000000004FAEE38E0000000000000A6D
+t1336861582
 s2669
 i<iostream>
 i"kinectMesh.h"
 i"Math.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/kinectMesh.h
-c000000004FAED8AA000000000000046B
-t1336858794
+c000000004FAEE38E000000000000046B
+t1336861582
 s1131
 i"ofxKinect.h"
 i"ofMain.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp
-c000000004FAED8AA000000000000019E
-t1336858794
-s414
+c000000004FAEE50200000000000001F8
+t1336861954
+s504
 i"ofMain.h"
 i"testApp.h"
 i"ofAppGlutWindow.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp
-c000000004FAED8AA0000000000002A7F
-t1336858794
+c000000004FAEE5020000000000002A7F
+t1336861954
 s10879
 i"ofxCvBlobTracker.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.h
-c000000004FAED8AA0000000000000776
-t1336858794
+c000000004FAEE38E0000000000000776
+t1336861582
 s1910
 i<map>
 i<vector>
@@ -907,8 +1001,8 @@ i"ofxCvTrackedBlob.h"
 i"ofxCvConstants_Track.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvConstants_Track.h
-c000000004FAED8AA000000000000031B
-t1336858794
+c000000004FAEE38E000000000000031B
+t1336861582
 s795
 i<iostream>
 i"cv.h"
@@ -916,20 +1010,20 @@ i"ofxCvBlob.h"
 i"ofxCvTrackedBlob.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvTrackedBlob.h
-c000000004FAED8AA000000000000059F
-t1336858794
+c000000004FAEE38E000000000000059F
+t1336861582
 s1439
 i"ofxOpenCv.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp
-c000000004FAED9580000000000001A4B
-t1336858968
-s6731
+c000000004FAEE5020000000000001A63
+t1336861954
+s6755
 i"testApp.h"
 
 N/Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.h
-c000000004FAED8AA00000000000008D8
-t1336858794
+c000000004FAEE38E00000000000008D8
+t1336861582
 s2264
 i"ofMain.h"
 i"ofxKinect.h"
@@ -2434,11 +2528,11 @@ t1312165198
 s26210
 
 N/var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h.gch
-t1336858373
+t1336861310
 s40824816
 
 N/var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-ffocvtsnytuokqapugguiedtwffi/Carbon.h.gch
-t1336858373
+t1336861309
 s33316944
 
 NopenFrameworks-Info.plist
@@ -2511,7 +2605,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesdb33d7d9105fb541^9679d7d9105fb541^---0#1#0#--18"Check dependencies36"817156E7-36C3-4CFA-8107-3C48892216EC-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies978df2e41c5fb541^c809f7e41c5fb541^---0#1#0#--18"Check dependencies36"2B986441-8D7B-4208-BB3A-C840EB3B043E-
 
 CCompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/BlobListener.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/BlobListener.cpp normal i386 c++ com.apple.compilers.llvmgcc42
 s358551659.400928
@@ -2807,15 +2901,133 @@ xc
 xcom.apple.compilers.llvmgcc42
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Compile /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/usb_libusb10.c6a899d65105fb541^5bee2c6b105fb541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/usb_libusb10.c0000000000000000^2265"CompileC build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/usb_libusb10.o ../../../addons/ofxKinect/libs/libfreenect/usb_libusb10.c normal i386 c com.apple.compilers.llvmgcc42    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -gdwarf-2 -msse3 -mssse3 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/moshMuralDebug.hmap -I/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources/i386 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -include /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-ffocvtsnytuokqapugguiedtwffi/Carbon.h -c /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/usb_libusb10.c -o /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/usb_libusb10.o36"6F1F9983-BE5B-4F1A-B1EA-B17507026C55-
 
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/BlobListener.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/BlobListener.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+s358554852.997309
+e358554854.410767
+r1
+xCompileC
+xbuild/moshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o
+x/Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvmgcc42
+oi686-apple-darwin11-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp2461ffe41c5fb541^4a2869e61c5fb541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp0000000000000000^2213"CompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o src/Boid.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/moshMuralDebug.hmap -I/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources/i386 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -D__MACOSX_CORE__ -lpthread -include /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h -c /Developer/openFrameworks/apps/MoshMural/emptyExample/src/Boid.cpp -o /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/Boid.o36"96A23BE6-06CB-4383-A7FC-0309525EEA57-
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+s358554852.997295
+e358554854.565628
+r1
+xCompileC
+xbuild/moshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o
+x/Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvmgcc42
+oi686-apple-darwin11-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cppe866ffe41c5fb541^c8cd90e61c5fb541^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cpp0000000000000000^2225"CompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o src/MyFlock.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/moshMuralDebug.hmap -I/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources/i386 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -D__MACOSX_CORE__ -lpthread -include /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h -c /Developer/openFrameworks/apps/MoshMural/emptyExample/src/MyFlock.cpp -o /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/MyFlock.o36"E8AEF282-99C2-40ED-98AB-F3B26E52F5B5-
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/cameras.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/cameras.c normal i386 c com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/core.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/core.c normal i386 c com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/fft.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/fft.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/kinectMesh.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/kinectMesh.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+s358554852.994991
+e358554854.938808
+r1
+xCompileC
+xbuild/moshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o
+x/Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvmgcc42
+oi686-apple-darwin11-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp9be5fee41c5fb541^fc55f0e61c5fb541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp0000000000000000^2213"CompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o src/main.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/moshMuralDebug.hmap -I/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources/i386 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -D__MACOSX_CORE__ -lpthread -include /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h -c /Developer/openFrameworks/apps/MoshMural/emptyExample/src/main.cpp -o /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/main.o36"043B9456-D8A9-46FE-AA3B-C6A0B383B1BF-
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+s358554852.997361
+e358554855.126424
+r1
+xCompileC
+xbuild/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o
+x/Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvmgcc42
+oi686-apple-darwin11-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp7366ffe41c5fb541^925e20e71c5fb541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp0000000000000000^2261"CompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o src/ofxCvBlobTracker.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/moshMuralDebug.hmap -I/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources/i386 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -D__MACOSX_CORE__ -lpthread -include /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h -c /Developer/openFrameworks/apps/MoshMural/emptyExample/src/ofxCvBlobTracker.cpp -o /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvBlobTracker.o36"65E37C12-6A21-4C27-B3B5-E11482246C9E-
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvColorImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvContourFinder.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvFloatImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvGrayscaleImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvHaarFinder.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvHaarFinder.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxCvShortImage.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/ofxKinect.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/src/ofxKinect.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/registration.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/registration.c normal i386 c com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o /Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42
+s358554852.994991
+e358554855.222088
+r1
+xCompileC
+xbuild/moshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o
+x/Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvmgcc42
+oi686-apple-darwin11-llvm-gcc-4.2: -lpthread: linker input file unused because linking not done
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp79e5fee41c5fb541^1edd38e71c5fb541^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp0000000000000000^2225"CompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o src/testApp.cpp normal i386 c++ com.apple.compilers.llvmgcc42    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv LANG en_US.US-ASCII    /Developer/usr/bin/llvm-gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -Os -fasm-blocks -Wno-deprecated-declarations -Wno-invalid-offsetof -gdwarf-2 -msse3 -mssse3 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/moshMuralDebug.hmap -I/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include -I../../../libs/openFrameworks -I../../../libs/openFrameworks/3d -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/gl -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/math -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/types -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/poco/include -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/fmodex/include -I../../../libs/glew/include -I../../../libs/FreeImage/include -I../../../libs/tess2/include -I../../../libs/cairo/include/cairo -I../../../libs/rtaudio/include -I../../../addons/ofxKinect/libs/libusb/osx/include -I../../../addons/ofxOpenCv/libs/opencv/include -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources/i386 -I/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -D__MACOSX_CORE__ -lpthread -include /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h -c /Developer/openFrameworks/apps/MoshMural/emptyExample/src/testApp.cpp -o /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/testApp.o36"C1B2C679-7BC4-4A5D-98CA-07076C3C5E7D-
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/tilt.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/tilt.c normal i386 c com.apple.compilers.llvmgcc42
+r0
+
+CCompileC build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/usb_libusb10.o /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/usb_libusb10.c normal i386 c com.apple.compilers.llvmgcc42
+r0
+
 CLd /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug normal i386
-s358551772.526376
-e358551777.372836
+s358554855.228647
+e358554856.266441
 r1
 xLd
 x/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug
 xnormal
 xi386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Link /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug9ed186dc105fb541^d6725fe1105fb541^---0#0#0#--2560"Ld bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug normal i386    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    /Developer/usr/bin/llvm-g++-4.2 -arch i386 -L/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010 -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010 -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -filelist /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/moshMuralDebug.LinkFileList -dead_strip ../../../libs/poco/lib/osx/PocoFoundation.a ../../../libs/poco/lib/osx/PocoNet.a ../../../libs/poco/lib/osx/PocoXML.a ../../../libs/poco/lib/osx/PocoUtil.a ../../../libs/tess2/lib/osx/tess2.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo-script-interpreter.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/cairo/lib/osx/pixman-1.a ../../../libs/fmodex/lib/osx/libfmodex.dylib ../../../libs/rtAudio/lib/osx/rtAudio.a ../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a -framework GLUT /Developer/openFrameworks/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework IOKit /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a -o /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug36"C68DF84F-1884-4B3A-A700-97ED71CF9D6F-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Link /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug5cae3ae71c5fb541^003644e81c5fb541^---0#0#0#--2560"Ld bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug normal i386    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    /Developer/usr/bin/llvm-g++-4.2 -arch i386 -L/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010 -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010 -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs -L/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx -F/Developer/openFrameworks/apps/MoshMural/emptyExample/bin -F/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx -filelist /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/moshMuralDebug.LinkFileList -dead_strip ../../../libs/poco/lib/osx/PocoFoundation.a ../../../libs/poco/lib/osx/PocoNet.a ../../../libs/poco/lib/osx/PocoXML.a ../../../libs/poco/lib/osx/PocoUtil.a ../../../libs/tess2/lib/osx/tess2.a ../../../libs/glew/lib/osx/glew.a ../../../libs/cairo/lib/osx/cairo-script-interpreter.a ../../../libs/cairo/lib/osx/cairo.a ../../../libs/cairo/lib/osx/pixman-1.a ../../../libs/fmodex/lib/osx/libfmodex.dylib ../../../libs/rtAudio/lib/osx/rtAudio.a ../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a -framework GLUT /Developer/openFrameworks/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework IOKit /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a -o /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/MacOS/moshMuralDebug36"A597B076-BFD9-4F35-AB2B-8F91D1327C57-
 
 CPBXCp ../../../libs/glut/lib/osx/GLUT.framework bin/moshMuralDebug.app/Contents/Frameworks/GLUT.framework
 s358551662.606594
@@ -2827,13 +3039,22 @@ xbin/moshMuralDebug.app/Contents/Frameworks/GLUT.framework
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy bin/moshMuralDebug.app/Contents/Frameworks/GLUT.frameworka8569b6e105fb541^d047e16e105fb541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/Frameworks/GLUT.framework00f48876dcffdf42^472"PBXCp ../../../libs/glut/lib/osx/GLUT.framework bin/moshMuralDebug.app/Contents/Frameworks/GLUT.framework    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx/GLUT.framework /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/Frameworks36"BC3A5C1D-E026-4191-B64A-71DF8E3CBEA5-
 
 CPhaseScriptExecution "Run Script" /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
-s358551777.381152
-e358551777.737273
+s358554452.931580
+e358554452.998687
 r1
 xPhaseScriptExecution
 xRun Script
 x/Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'b5e263e1105fb541^b1bfbce1105fb541^---0#0#0#--23401"PhaseScriptExecution "Run Script" build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv ACTION build    setenv ADDONS_PATH ../../../addons    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER Kleeb2    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv BUILD_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv CACHE_ROOT /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv CONFIGURATION_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug    setenv CONTENTS_FOLDER_PATH moshMuralDebug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEFAULT_COMPILER com.apple.compilers.llvmgcc42    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources    setenv DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH moshMuralDebug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/MoshMural.dst    setenv DWARF_DSYM_FILE_NAME moshMuralDebug.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv EMBEDDED_PROFILE_NAME embedded.provisionprofile    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH moshMuralDebug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH moshMuralDebug.app/Contents/MacOS    setenv EXECUTABLE_NAME moshMuralDebug    setenv EXECUTABLE_PATH moshMuralDebug.app/Contents/MacOS/moshMuralDebug    setenv FILE_LIST /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH moshMuralDebug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\"  \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME moshMuralDebug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvmgcc42    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include\" \"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../addons/ofxKinect/libs/libusb/osx/include/\" \"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH moshMuralDebug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH moshMuralDebug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/MoshMural.dst/Users/Kleeb2/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER Kleeb2    setenv INSTALL_PATH /Users/Kleeb2/Applications    setenv INSTALL_ROOT /tmp/MoshMural.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH moshMuralDebug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/moshMuralDebug-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\"  \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"             \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"                                             \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\""    setenv LIB_CAIRO1 "\"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\""    setenv LIB_CAIRO2 "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_CAIRO3 "\"../../../libs/cairo/lib/osx/pixman-1.a\""    setenv LIB_FMODEX "\"../../../libs/fmodex/lib/osx/libfmodex.dylib\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/osx/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLUT "\"../../../libs/glut/lib/osx/GLUT.framework/Versions/A/GLUT\""    setenv LIB_POCOFOUNDATION "\"../../../libs/poco/lib/osx/PocoFoundation.a\""    setenv LIB_POCONET "\"../../../libs/poco/lib/osx/PocoNet.a\""    setenv LIB_POCOUTIL "\"../../../libs/poco/lib/osx/PocoUtil.a\""    setenv LIB_POCOXML "\"../../../libs/poco/lib/osx/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/moshMuralDebug.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH moshMuralDebug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50d    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects    setenv OBJECT_FILE_DIR_normal /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal    setenv OBJROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv OFX_KINECT_HEADERS "\"../../../addons/ofxKinect/libs/libusb/osx/include/\""    setenv OFX_KINECT_LIBS "\"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv OFX_OPENCV_HEADERS "\"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv OF_ADDON_HEADERS "\"../../../addons/ofxKinect/libs/libusb/osx/include/\" \"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv OF_ADDON_LIBS "\"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\""    setenv OF_CORE_LIBS "\"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv OTHER_LDFLAGS "\"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\" \"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH moshMuralDebug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "c c++"    setenv PKGINFO_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/PkgInfo    setenv PKGINFO_PATH moshMuralDebug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/MacOSX.platform    setenv PLATFORM_NAME macosx    setenv PLATFORM_PREFERRED_ARCH x86_64    setenv PLATFORM_PRODUCT_BUILD_VERSION 4D502    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH moshMuralDebug.app/Contents/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH moshMuralDebug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME moshMuralDebug    setenv PRODUCT_SETTINGS_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/openFrameworks-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT MoshMural    setenv PROJECT_DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/DerivedSources    setenv PROJECT_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv PROJECT_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/MoshMural.xcodeproj    setenv PROJECT_NAME MoshMural    setenv PROJECT_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build    setenv PUBLIC_HEADERS_FOLDER_PATH moshMuralDebug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH moshMuralDebug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SDK_PRODUCT_BUILD_VERSION 11D50d    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH moshMuralDebug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH moshMuralDebug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv SRCROOT /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_PLATFORMS macosx    setenv SYMROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME moshMural    setenv TARGET_BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv TARGET_NAME moshMural    setenv TARGET_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH moshMuralDebug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER Kleeb2    setenv USER_APPS_DIR /Users/Kleeb2/Applications    setenv USER_LIBRARY_DIR /Users/Kleeb2/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH moshMuralDebug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER Kleeb2    setenv VERSION_INFO_FILE moshMuralDebug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:moshMuralDebug  PROJECT:MoshMural-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME moshMuralDebug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4D502    setenv XCODE_VERSION_ACTUAL 0421    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0420    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh36"E6FDDD7C-4BB6-4567-97CA-02E8D6CEA184-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'ea24ef541b5fb541^26aaff541b5fb541^---0#0#0#--23401"PhaseScriptExecution "Run Script" build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv ACTION build    setenv ADDONS_PATH ../../../addons    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER Kleeb2    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv BUILD_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv CACHE_ROOT /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv CONFIGURATION_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug    setenv CONTENTS_FOLDER_PATH moshMuralDebug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEFAULT_COMPILER com.apple.compilers.llvmgcc42    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources    setenv DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH moshMuralDebug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/MoshMural.dst    setenv DWARF_DSYM_FILE_NAME moshMuralDebug.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv EMBEDDED_PROFILE_NAME embedded.provisionprofile    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH moshMuralDebug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH moshMuralDebug.app/Contents/MacOS    setenv EXECUTABLE_NAME moshMuralDebug    setenv EXECUTABLE_PATH moshMuralDebug.app/Contents/MacOS/moshMuralDebug    setenv FILE_LIST /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH moshMuralDebug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\"  \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME moshMuralDebug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvmgcc42    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include\" \"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../addons/ofxKinect/libs/libusb/osx/include/\" \"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH moshMuralDebug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH moshMuralDebug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/MoshMural.dst/Users/Kleeb2/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER Kleeb2    setenv INSTALL_PATH /Users/Kleeb2/Applications    setenv INSTALL_ROOT /tmp/MoshMural.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH moshMuralDebug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/moshMuralDebug-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\"  \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"             \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"                                             \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\""    setenv LIB_CAIRO1 "\"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\""    setenv LIB_CAIRO2 "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_CAIRO3 "\"../../../libs/cairo/lib/osx/pixman-1.a\""    setenv LIB_FMODEX "\"../../../libs/fmodex/lib/osx/libfmodex.dylib\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/osx/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLUT "\"../../../libs/glut/lib/osx/GLUT.framework/Versions/A/GLUT\""    setenv LIB_POCOFOUNDATION "\"../../../libs/poco/lib/osx/PocoFoundation.a\""    setenv LIB_POCONET "\"../../../libs/poco/lib/osx/PocoNet.a\""    setenv LIB_POCOUTIL "\"../../../libs/poco/lib/osx/PocoUtil.a\""    setenv LIB_POCOXML "\"../../../libs/poco/lib/osx/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal/i386/moshMuralDebug.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH moshMuralDebug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50d    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects    setenv OBJECT_FILE_DIR_normal /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Objects-normal    setenv OBJROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv OFX_KINECT_HEADERS "\"../../../addons/ofxKinect/libs/libusb/osx/include/\""    setenv OFX_KINECT_LIBS "\"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv OFX_OPENCV_HEADERS "\"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv OF_ADDON_HEADERS "\"../../../addons/ofxKinect/libs/libusb/osx/include/\" \"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv OF_ADDON_LIBS "\"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\""    setenv OF_CORE_LIBS "\"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv OTHER_LDFLAGS "\"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\" \"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH moshMuralDebug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "c c++"    setenv PKGINFO_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/PkgInfo    setenv PKGINFO_PATH moshMuralDebug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/MacOSX.platform    setenv PLATFORM_NAME macosx    setenv PLATFORM_PREFERRED_ARCH x86_64    setenv PLATFORM_PRODUCT_BUILD_VERSION 4D502    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH moshMuralDebug.app/Contents/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH moshMuralDebug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME moshMuralDebug    setenv PRODUCT_SETTINGS_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/openFrameworks-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT MoshMural    setenv PROJECT_DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/DerivedSources    setenv PROJECT_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv PROJECT_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/MoshMural.xcodeproj    setenv PROJECT_NAME MoshMural    setenv PROJECT_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build    setenv PUBLIC_HEADERS_FOLDER_PATH moshMuralDebug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH moshMuralDebug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SDK_PRODUCT_BUILD_VERSION 11D50d    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH moshMuralDebug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH moshMuralDebug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv SRCROOT /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_PLATFORMS macosx    setenv SYMROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME moshMural    setenv TARGET_BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv TARGET_NAME moshMural    setenv TARGET_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build    setenv TEMP_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH moshMuralDebug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER Kleeb2    setenv USER_APPS_DIR /Users/Kleeb2/Applications    setenv USER_LIBRARY_DIR /Users/Kleeb2/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH moshMuralDebug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER Kleeb2    setenv VERSION_INFO_FILE moshMuralDebug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:moshMuralDebug  PROJECT:MoshMural-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME moshMuralDebug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4D502    setenv XCODE_VERSION_ACTUAL 0421    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0420    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Developer/openFrameworks/apps/MoshMural/emptyExample/build/MoshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh36"6EE7A29C-32A9-4649-B775-3F30690F8F05-
+
+CPhaseScriptExecution "Run Script" /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+s358554856.274842
+e358554856.411772
+r1
+xPhaseScriptExecution
+xRun Script
+x/Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'fa0947e81c5fb541^6e6969e81c5fb541^---0#0#0#--23401"PhaseScriptExecution "Run Script" build/moshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv ACTION build    setenv ADDONS_PATH ../../../addons    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER Kleeb2    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386"    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv BUILD_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv CACHE_ROOT /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv CONFIGURATION_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug    setenv CONTENTS_FOLDER_PATH moshMuralDebug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEFAULT_COMPILER com.apple.compilers.llvmgcc42    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources    setenv DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH moshMuralDebug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/moshMural.dst    setenv DWARF_DSYM_FILE_NAME moshMuralDebug.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv EMBEDDED_PROFILE_NAME embedded.provisionprofile    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH moshMuralDebug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH moshMuralDebug.app/Contents/MacOS    setenv EXECUTABLE_NAME moshMuralDebug    setenv EXECUTABLE_PATH moshMuralDebug.app/Contents/MacOS/moshMuralDebug    setenv FILE_LIST /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH moshMuralDebug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\"  \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME moshMuralDebug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvmgcc42    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_CAIRO "\"../../../libs/cairo/include/cairo\""    setenv HEADER_FMODEX "\"../../../libs/fmodex/include\""    setenv HEADER_FREEIMAGE "\"../../../libs/FreeImage/include\""    setenv HEADER_FREETYPE "\"../../../libs/freetype/include\""    setenv HEADER_FREETYPE2 "\"../../../libs/freetype/include/freetype2\""    setenv HEADER_GLEW "\"../../../libs/glew/include\""    setenv HEADER_OF "\"../../../libs/openFrameworks/**\""    setenv HEADER_POCO "\"../../../libs/poco/include\""    setenv HEADER_RTAUDIO "\"../../../libs/rtaudio/include\""    setenv HEADER_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/include\" \"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\" \"../../../addons/ofxKinect/libs/libusb/osx/include/\" \"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv HEADER_TESS2 "\"../../../libs/tess2/include\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH moshMuralDebug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH moshMuralDebug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/moshMural.dst/Users/Kleeb2/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER Kleeb2    setenv INSTALL_PATH /Users/Kleeb2/Applications    setenv INSTALL_ROOT /tmp/moshMural.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH moshMuralDebug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/moshMuralDebug-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\"  \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"             \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\"                                             \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\" \"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libfreenect/lib/vs2010\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxKinect/libs/libusb/osx/libs\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/../../../addons/ofxOpenCv/libs/opencv/lib/osx\""    setenv LIB_CAIRO1 "\"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\""    setenv LIB_CAIRO2 "\"../../../libs/cairo/lib/osx/cairo.a\""    setenv LIB_CAIRO3 "\"../../../libs/cairo/lib/osx/pixman-1.a\""    setenv LIB_FMODEX "\"../../../libs/fmodex/lib/osx/libfmodex.dylib\""    setenv LIB_FREEIMAGE "\"../../../libs/FreeImage/lib/osx/freeimage.a\""    setenv LIB_FREETYPE "\"../../../libs/freetype/lib/osx/freetype.a\""    setenv LIB_GLEW "\"../../../libs/glew/lib/osx/glew.a\""    setenv LIB_GLUT "\"../../../libs/glut/lib/osx/GLUT.framework/Versions/A/GLUT\""    setenv LIB_POCOFOUNDATION "\"../../../libs/poco/lib/osx/PocoFoundation.a\""    setenv LIB_POCONET "\"../../../libs/poco/lib/osx/PocoNet.a\""    setenv LIB_POCOUTIL "\"../../../libs/poco/lib/osx/PocoUtil.a\""    setenv LIB_POCOXML "\"../../../libs/poco/lib/osx/PocoXML.a\""    setenv LIB_RTAUDIO "\"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv LIB_TESS "\"../../../libs/tess2/lib/osx/tess2.a\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal/i386/moshMuralDebug.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH moshMuralDebug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 11D50d    setenv MAC_OS_X_VERSION_ACTUAL 1073    setenv MAC_OS_X_VERSION_MAJOR 1070    setenv MAC_OS_X_VERSION_MINOR 0703    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects    setenv OBJECT_FILE_DIR_normal /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Objects-normal    setenv OBJROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv OFX_KINECT_HEADERS "\"../../../addons/ofxKinect/libs/libusb/osx/include/\""    setenv OFX_KINECT_LIBS "\"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv OFX_OPENCV_HEADERS "\"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv OF_ADDON_HEADERS "\"../../../addons/ofxKinect/libs/libusb/osx/include/\" \"../../../addons/ofxOpenCv/libs/opencv/include/\""    setenv OF_ADDON_LIBS "\"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv OF_CORE_HEADERS "\"../../../libs/openFrameworks/**\" \"../../../libs/poco/include\" \"../../../libs/freetype/include\" \"../../../libs/freetype/include/freetype2\" \"../../../libs/fmodex/include\" \"../../../libs/glew/include\" \"../../../libs/FreeImage/include\" \"../../../libs/tess2/include\" \"../../../libs/cairo/include/cairo\" \"../../../libs/rtaudio/include\""    setenv OF_CORE_LIBS "\"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\""    setenv OF_PATH ../../..    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv OTHER_LDFLAGS "\"../../../libs/poco/lib/osx/PocoFoundation.a\" \"../../../libs/poco/lib/osx/PocoNet.a\" \"../../../libs/poco/lib/osx/PocoXML.a\" \"../../../libs/poco/lib/osx/PocoUtil.a\" \"../../../libs/tess2/lib/osx/tess2.a\" \"../../../libs/glew/lib/osx/glew.a\" \"../../../libs/cairo/lib/osx/cairo-script-interpreter.a\" \"../../../libs/cairo/lib/osx/cairo.a\" \"../../../libs/cairo/lib/osx/pixman-1.a\" \"../../../libs/fmodex/lib/osx/libfmodex.dylib\" \"../../../libs/rtAudio/lib/osx/rtAudio.a\" \"../../../addons/ofxKinect/libs/libusb/osx/libs/usb-1.0.a\""    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH moshMuralDebug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "c c++"    setenv PKGINFO_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/PkgInfo    setenv PKGINFO_PATH moshMuralDebug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/MacOSX.platform    setenv PLATFORM_NAME macosx    setenv PLATFORM_PREFERRED_ARCH x86_64    setenv PLATFORM_PRODUCT_BUILD_VERSION 4D502    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH moshMuralDebug.app/Contents/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH moshMuralDebug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME moshMuralDebug    setenv PRODUCT_SETTINGS_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/openFrameworks-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT moshMural    setenv PROJECT_DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/DerivedSources    setenv PROJECT_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv PROJECT_FILE_PATH /Developer/openFrameworks/apps/MoshMural/emptyExample/moshMural.xcodeproj    setenv PROJECT_NAME moshMural    setenv PROJECT_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build    setenv PUBLIC_HEADERS_FOLDER_PATH moshMuralDebug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Developer/openFrameworks/apps/MoshMural/emptyExample/bin\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH moshMuralDebug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SDK_PRODUCT_BUILD_VERSION 11D50d    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH moshMuralDebug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH moshMuralDebug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv SRCROOT /Developer/openFrameworks/apps/MoshMural/emptyExample    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_PLATFORMS macosx    setenv SYMROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME moshMural    setenv TARGET_BUILD_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/bin    setenv TARGET_NAME moshMural    setenv TARGET_TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build    setenv TEMP_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build    setenv TEMP_FILES_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build    setenv TEMP_FILE_DIR /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build    setenv TEMP_ROOT /Developer/openFrameworks/apps/MoshMural/emptyExample/build    setenv TEST_AFTER_BUILD NO    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH moshMuralDebug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER Kleeb2    setenv USER_APPS_DIR /Users/Kleeb2/Applications    setenv USER_LIBRARY_DIR /Users/Kleeb2/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH moshMuralDebug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER Kleeb2    setenv VERSION_INFO_FILE moshMuralDebug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:moshMuralDebug  PROJECT:moshMural-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME moshMuralDebug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4D502    setenv XCODE_VERSION_ACTUAL 0421    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0420    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Developer/openFrameworks/apps/MoshMural/emptyExample/build/moshMural.build/Debug/moshMural.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh36"DD682A6E-EA13-4149-8C8F-CCB8D0DD2FF0-
 
 CProcessInfoPlistFile /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app/Contents/Info.plist openFrameworks-Info.plist
 s358551653.377845
@@ -2847,20 +3068,26 @@ lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Process
 CProcessPCH /Users/Kleeb2/Library/Developer/Xcode/DerivedData/MoshMural-btrtxwijqwredfgxqcqxgxscrxlx/Index/PrecompiledHeaders/Carbon-hicmojyrrikjwsbplvuvgdwyznag_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
+CProcessPCH /Users/Kleeb2/Library/Developer/Xcode/DerivedData/moshMural-ecoqafruvncxcicighcpuwdxwxzm/Index/PrecompiledHeaders/Carbon-hicmojyrrikjwsbplvuvgdwyznag_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CProcessPCH /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-ffocvtsnytuokqapugguiedtwffi/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c com.apple.compilers.llvmgcc42
 r0
 
 CProcessPCH++ /Users/Kleeb2/Library/Developer/Xcode/DerivedData/MoshMural-btrtxwijqwredfgxqcqxgxscrxlx/Index/PrecompiledHeaders/Carbon-dkzvsezlikccggboeyavganfbows_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
+CProcessPCH++ /Users/Kleeb2/Library/Developer/Xcode/DerivedData/moshMural-ecoqafruvncxcicighcpuwdxwxzm/Index/PrecompiledHeaders/Carbon-dkzvsezlikccggboeyavganfbows_ast/Carbon.h.pth /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CProcessPCH++ /var/folders/ww/sn7zl8ld7d5f_w59n106bkxh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-aukxrfeijoegchhjbvffizwbzeew/Carbon.h.gch /System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.llvmgcc42
 r0
 
 CTouch /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app
-s358551777.759760
-e358551777.763603
+s358554856.428098
+e358554856.432253
 r1
 xTouch
 x/Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Touch /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app7689c2e1105fb541^c07bc3e1105fb541^---0#0#0#--189"Touch bin/moshMuralDebug.app    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    /usr/bin/touch -c /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app36"9114DB0C-B6B6-4715-A2E1-D9D92860FD7F-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Touch /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app88a16de81c5fb541^fca86ee81c5fb541^---0#0#0#--189"Touch bin/moshMuralDebug.app    cd /Developer/openFrameworks/apps/MoshMural/emptyExample    /usr/bin/touch -c /Developer/openFrameworks/apps/MoshMural/emptyExample/bin/moshMuralDebug.app36"052BF411-92EC-4458-ABAF-3F11550F92B2-
 

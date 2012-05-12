@@ -14,6 +14,7 @@ void testApp::setup(){
     nearThreshold           = 230;
     farThreshold            = 90;
     blobCount               = 0;
+                       
     
     grayImage.allocate(kinect.width, kinect.height);
 	grayThreshNear.allocate(kinect.width, kinect.height);
