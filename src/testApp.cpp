@@ -169,6 +169,9 @@ void testApp::blobHandler(bool bThreshWithOpenCV = false) {
 
 void testApp::scalePoints(ofxCvContourFinder& cf, float wScale, float hScale, int vAdjust, int hAdjust) {
     for (int i = 0; i < cf.blobs.size(); i++) {
+        cf.blobs[i].centroid.x = cf.blobs[i].centroid.x*wScale + vAdjust;
+        cf.blobs[i].centroid.y = cf.blobs[i].centroid.y*hScale + hAdjust;
+
         for (int j = 0; j < cf.blobs[i].pts.size(); j++) {
             cf.blobs[i].pts[j].x = cf.blobs[i].pts[j].x * wScale + vAdjust;
             cf.blobs[i].pts[j].y = cf.blobs[i].pts[j].y * hScale + hAdjust;
